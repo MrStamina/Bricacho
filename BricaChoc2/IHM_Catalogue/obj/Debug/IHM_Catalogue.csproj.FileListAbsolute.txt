@@ -10,3 +10,6 @@ C:\Users\Cdi07\Desktop\BricaChoc2\IHM_Catalogue\obj\Debug\IHM_Catalogue.csproj.G
 C:\Users\Cdi07\Desktop\BricaChoc2\IHM_Catalogue\obj\Debug\IHM_Catalogue.exe
 C:\Users\Cdi07\Desktop\BricaChoc2\IHM_Catalogue\obj\Debug\IHM_Catalogue.pdb
 C:\Users\Cdi07\Desktop\BricaChoc2\IHM_Catalogue\obj\Debug\IHM_Catalogue.Form_Produit.resources
+C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\IHM_Catalogue\bin\Debug\IHM_Catalogue.exe.config
+C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\IHM_Catalogue\obj\Debug\IHM_Catalogue.exe
+C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\IHM_Catalogue\obj\Debug\IHM_Catalogue.pdb
