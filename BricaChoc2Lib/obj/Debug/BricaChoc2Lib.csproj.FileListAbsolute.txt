@@ -1,0 +1,5 @@
+C:\Users\Cdi07\Desktop\BricaChoc2\BricaChoc2Lib\bin\Debug\BricaChoc2Lib.dll
+C:\Users\Cdi07\Desktop\BricaChoc2\BricaChoc2Lib\bin\Debug\BricaChoc2Lib.pdb
+C:\Users\Cdi07\Desktop\BricaChoc2\BricaChoc2Lib\obj\Debug\BricaChoc2Lib.csprojResolveAssemblyReference.cache
+C:\Users\Cdi07\Desktop\BricaChoc2\BricaChoc2Lib\obj\Debug\BricaChoc2Lib.dll
+C:\Users\Cdi07\Desktop\BricaChoc2\BricaChoc2Lib\obj\Debug\BricaChoc2Lib.pdb

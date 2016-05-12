@@ -1,0 +1,3853 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
+  dslVersion="1.0.0.0"
+  Id="fb097103-ce7e-4abb-b29a-92fdfeb887fd"
+  name="BricaChoc2" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <appliedStereotypesInternal>
+    <stereotypeInstance
+      Id="7014feab-6d55-4cad-a03c-36b980d36c8c"
+      name="namespace"
+      profile="CSharpProfile">
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="5b47f2c0-b10b-430e-adf0-3b0840b402ea">
+          <propertyInstance
+            Id="f5330fab-c857-4f1d-b83c-821d3464586c"
+            name="BaseName" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="7a086472-0e92-41ee-afff-dad6431787c7">
+          <propertyInstance
+            Id="9a8c16f5-08f2-48e4-a9cf-64bd36573a0f"
+            name="ClrAttributes" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="f0d9e6c1-3846-4603-bb06-27d6d2c085fe">
+          <propertyInstance
+            Id="46213075-b188-4f69-9eb5-a6dfd8a081de"
+            name="Usings" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance
+      Id="1fac1390-1fee-4dc3-b708-72db9bab6954"
+      name="TextTemplateBindings"
+      profile="TextTemplateBindings">
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="46b20c14-a5e7-48a5-a8b6-a16d976e7554">
+          <propertyInstance
+            Id="ef867ec7-a69a-46a4-bda9-2cf63cdeffbd"
+            name="Alias"
+            value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="674d3543-6e58-4e82-b985-982251ed0f40">
+          <propertyInstance
+            Id="f95ab529-8048-4dd9-b0b7-f3927c43d65a"
+            name="TemplateFilePath"
+            value="ClassTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="2e068c90-d6cd-4a0a-a76b-79178446a7e1">
+          <propertyInstance
+            Id="34029cdd-0f4c-4ee2-b3df-877c7ca8725f"
+            name="ProjectPath"
+            value="ClassTemplate=..\BricaChoc2Lib\BricaChoc2Lib.csproj|EnumTemplate=..\BricaChoc2Lib\BricaChoc2Lib.csproj|InterfaceTemplate=..\BricaChoc2Lib\BricaChoc2Lib.csproj|StructTemplate=..\BricaChoc2Lib\BricaChoc2Lib.csproj" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="65ca95ff-4d90-4a5d-b17e-0c1ac8ea3e40">
+          <propertyInstance
+            Id="6410d200-8155-4899-8336-68f38cbc15cb"
+            name="TargetDirectory"
+            value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="abc183e3-4904-408c-97df-9705951a8b69">
+          <propertyInstance
+            Id="8e59edbb-a356-4b30-ac4a-f6e713d8c3b9"
+            name="TargetName"
+            value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="c974ccbe-512e-411f-a34e-1dffa9d0bb19">
+          <propertyInstance
+            Id="d8f7ba65-a068-49fc-b9af-2f5c4d2c8326"
+            name="Overwrite"
+            value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="88fdf203-9664-43f3-8525-6a7817007fd5">
+          <propertyInstance
+            Id="d126f626-5b01-450b-b6d0-f402baa40eac"
+            name="Parameters" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="0fbcb94c-af7b-4d88-b88c-ecbeb8e3aba8">
+      <profileInstance
+        Id="57526717-40c1-423f-a15a-8b3c020842b1"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="b0e53439-b854-4857-87f7-744f2d4be5fc">
+      <profileInstance
+        Id="f67dfcf5-755c-41f1-bffa-4c7372ef2b2b"
+        name="TextTemplateBindings" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="c0e57c53-e8ba-4342-9088-126a38f56e54"
+        name="LigneVente"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="e0556234-c04c-441d-a46e-4ad0d015d75d"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="38d1a1b5-4d6e-472d-8e19-bfa95a48867e">
+                <propertyInstance
+                  Id="be643bda-38de-4741-ad39-e77cadc1bb13"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d26f9c50-e51a-4dd0-827d-c5a7af63152d">
+                <propertyInstance
+                  Id="651964fd-e8d4-49bf-a772-0d1cfa5df889"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c2685872-34ad-42d9-bd9f-acf1af02811b">
+                <propertyInstance
+                  Id="9db268f3-9e34-4ef8-aaf6-f4c81097445b"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fe6912d0-6643-40e7-8528-5887e5a969fb">
+                <propertyInstance
+                  Id="bdf01eee-2e1a-4717-ab23-3761b2e29743"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="37df90e8-936b-4202-b694-178e82283514">
+                <propertyInstance
+                  Id="7f744a4a-070f-4f6a-8b3b-656a1a5483e5"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="135a2b41-f25c-4de6-8297-95a46365b528"
+            isDerived="false"
+            sourceEndRoleName="LigneVente"
+            targetEndRoleName="Article"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="6c06f7fc-baf2-48b4-bc38-ccb8c3c0d3b6"
+              LastKnownName="Article"
+              LastKnownLocation="BricaChoc2.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b5192487-fe72-4375-9e7e-803af5292ba3"
+                  name="LigneVente"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4a30bab1-9e58-4398-b171-a4eab607a7e1"
+                  name="Article"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="abc2e34e-e948-42a3-8018-634f1f1d0e45"
+            isDerived="false"
+            sourceEndRoleName="LigneVente"
+            targetEndRoleName="Stock"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="35ad8250-0bc8-4a70-b450-d59d2dad96fa"
+              LastKnownName="Stock"
+              LastKnownLocation="BricaChoc2.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7cd8f5ee-7851-4b47-9ea6-72101a8fcc63"
+                  name="LigneVente"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0ed49b9b-3b04-4312-b4d9-718bc269259c"
+                  name="Stock"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="25c6c055-a16f-408f-8c47-8f65063112d7"
+        name="Manager"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="2322d7bb-a867-4978-8410-3b2bfffdf4a8"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ca304369-8088-469c-b155-cb169277615c">
+                <propertyInstance
+                  Id="4742c32c-d49c-4309-ba8f-1eb91b829555"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cdcf4e85-2820-4a77-890b-05a93abc4679">
+                <propertyInstance
+                  Id="813f7f67-e13a-4b94-b583-2848aaf42416"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b5182c0f-1654-4b87-8398-dbdfa153026a">
+                <propertyInstance
+                  Id="f5ce96d3-7b81-432d-8c7e-9a83756c62a6"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9c096fa4-c36e-4d56-8198-2ae2de06ef15">
+                <propertyInstance
+                  Id="d0bca568-e1ee-4933-81ea-507ae2bbecb7"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c312ef1c-c9e0-45d6-8cfb-e92af42815af">
+                <propertyInstance
+                  Id="46b840ad-6b71-45d2-96eb-5614dee12245"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="1c280475-c648-4977-8610-1f5a57dbdfa8"
+            isDerived="false"
+            sourceEndRoleName="Manager"
+            targetEndRoleName="Catalogue"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="48e56298-843e-460f-8851-98d1b0435a48"
+              LastKnownName="Catalogue"
+              LastKnownLocation="BricaChoc2.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ed28ed01-bf7c-4599-abfe-8f67358f6035"
+                  name="Manager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="44ab71f1-2686-409a-9836-506ae1cdb4ae"
+                  name="Catalogue"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="6e80ae4c-ca97-4974-9d9f-28eb7c61941a"
+            isDerived="false"
+            sourceEndRoleName="Manager"
+            targetEndRoleName="Caisse"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="9b92356f-116a-49be-ba86-1bff026a27f9"
+              LastKnownName="Caisse"
+              LastKnownLocation="BricaChoc2.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="689e9d35-0932-4afb-9cf2-c4d9f69e6fbb"
+                  name="Manager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4bc79832-d675-4e11-acbf-7a311d936590"
+                  name="Caisse"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a0794a05-394b-462b-8d61-c7052e9ad6e1"
+        name="Vente"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="80a1cd5a-e4f3-45a0-8a79-4bda5ce29b92"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ae04bfd4-53bb-4b29-8ed2-d473e96d6ae4">
+                <propertyInstance
+                  Id="03511d42-2595-478f-8e61-28ce0ee34977"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0e315f56-e64f-421a-965b-c62eea19154d">
+                <propertyInstance
+                  Id="bc646ce7-829b-4270-b28e-93d08651cbc9"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4a62f779-0533-444c-b1ca-10df37bfe634">
+                <propertyInstance
+                  Id="705e23e3-2f52-45b7-8b13-1b82df4d84d7"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5850d535-b993-4976-8c33-204cda8fd0d9">
+                <propertyInstance
+                  Id="07a54b4c-7263-4632-8763-a1c1538845b5"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="663c64f7-3783-4d1b-8cd2-d756f096c577">
+                <propertyInstance
+                  Id="57c7db2d-85b8-451a-8551-5cde221372a7"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="e07896b0-1e73-4e2b-bd9a-7b34425bb008"
+            isDerived="false"
+            sourceEndRoleName="Vente"
+            targetEndRoleName="LigneVente"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="c0e57c53-e8ba-4342-9088-126a38f56e54"
+              LastKnownName="LigneVente"
+              LastKnownLocation="BricaChoc2.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8158a504-af39-4ae0-8d1e-97c415031762"
+                  name="Vente"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="02845739-04f2-4f00-abf2-f1d96d29507f"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="64f2662e-9a43-4f14-9114-e6657d1d38f6"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="54fedf68-231c-4a64-afc9-07be913110f1"
+                  name="LigneVente"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="9c5ed707-7b86-4172-b9ff-d2a0e1a8327e"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="a1ff03da-7f17-44ee-80d4-377790c657da"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="adf39a38-2929-4a87-b808-52f53ca1a0b8"
+            isDerived="false"
+            sourceEndRoleName="Vente"
+            targetEndRoleName="Reglement"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="2607d750-1c8b-4633-a8e2-b9708f2a8c66"
+              LastKnownName="Reglement"
+              LastKnownLocation="BricaChoc2.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="662f982a-b8ba-4588-97d9-f79a0a83ffe9"
+                  name="Vente"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="54790f51-2e0e-4363-8895-d77f64b0244f"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="966c72ab-2e3f-4d17-98bc-1a925881d02f"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="08281b27-0c03-42d8-83b0-784eab544f85"
+                  name="Reglement"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="1c275bd2-10d4-4265-acfa-7993f5451075"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="9ab880b8-e099-4795-9754-4a6a59c39e17"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="36c30d31-bbf8-4a3c-9359-cd6a58da24e5"
+            isDerived="false"
+            sourceEndRoleName="Vente"
+            targetEndRoleName="Recu"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="8fd4217d-0b1a-44df-beac-dc6d09133712"
+              LastKnownName="Recu"
+              LastKnownLocation="BricaChoc2.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6971fd62-8239-4555-83d2-3affe67e363d"
+                  name="Vente"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2b9cdda0-d9d6-42dd-9ec0-5ad41556d0f6"
+                  name="Recu"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0c021974-7444-4d2c-afd6-17adaf55207c"
+        name="Caissier"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="a20f33bf-9bc9-459f-a5a8-e6a73174e665"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e6dabc62-423c-4485-a320-55ceb3ebfa9a">
+                <propertyInstance
+                  Id="e36bbf73-7980-42c1-8652-51182dbb875f"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ef5798dc-07cd-42a1-ba84-937f874ad1a2">
+                <propertyInstance
+                  Id="a3b6ad1f-667f-4a9e-b2bd-a9999801c1cf"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c01a6bcb-a570-48ae-adb1-f2a2799bbecc">
+                <propertyInstance
+                  Id="ad5d47a6-1842-4acb-8c69-5a2abfd7bcd2"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b34ee8cc-0070-4925-9c87-255c3bdb3a4d">
+                <propertyInstance
+                  Id="fea461e8-f559-44fd-ab2a-2e6e88791b8b"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="febbfcec-0e13-453e-9ae9-0c1a69b0f55a">
+                <propertyInstance
+                  Id="10d7722b-ac3b-40bf-8e5c-ccc8b07ce634"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="ca5cc4e4-16a2-4c6e-b0e4-46890dc1dc76"
+            isDerived="false"
+            sourceEndRoleName="Caissier"
+            targetEndRoleName="Caisse"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="9b92356f-116a-49be-ba86-1bff026a27f9"
+              LastKnownName="Caisse"
+              LastKnownLocation="BricaChoc2.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9b11f169-40bc-4d93-b788-4472b5a783b7"
+                  name="Caissier"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fb52fefb-7fc4-4681-88d4-28fd77ad54c7"
+                  name="Caisse"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2607d750-1c8b-4633-a8e2-b9708f2a8c66"
+        name="Reglement"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="edca666a-0a7e-4f94-a26a-e5137dbfe523"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0c924ca3-c8dd-4725-a07a-4ae8493948b9">
+                <propertyInstance
+                  Id="1e4f6f9e-649b-4713-98fd-28b9f2f870a4"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6b2363ef-f520-402e-a19b-9752e35a200b">
+                <propertyInstance
+                  Id="f01519ca-e6d6-47c4-a3d1-bdb0e9307bfe"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="edf69bc0-bfae-4ef9-a296-539a631f5123">
+                <propertyInstance
+                  Id="5c404a95-fd06-4e44-8352-241c1b914f59"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e1f4c255-1fbe-486b-bdd7-e9a0b17915f5">
+                <propertyInstance
+                  Id="d63674e6-340d-4712-b276-350e2188874e"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0a1616da-5bfd-4115-a8c3-08c0d6d14211">
+                <propertyInstance
+                  Id="b3950c97-1d13-4903-8643-c6830a39327c"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2985a445-0f7a-4bbc-a879-022b3ea3e9db"
+        name="Espece"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="a0438efe-3663-484a-911b-945549181d86"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1b94d738-895a-4c9c-90d1-8967653a603b">
+                <propertyInstance
+                  Id="c947122f-5047-44ac-b6bc-afeea1f9c107"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="89ef7190-ecf7-4604-a36b-38d40eb30a4f">
+                <propertyInstance
+                  Id="50ef21c2-caf7-413d-a477-a6738f020521"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b3b8a504-524b-4c55-a3ea-357b627e7cf1">
+                <propertyInstance
+                  Id="95aab8e9-9c45-43b7-b023-e10ee4e7e5a5"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="52126e22-76e5-4c71-b6ac-23cbc56c1182">
+                <propertyInstance
+                  Id="1f13e325-212e-46d2-9bf8-f22347ba5113"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cd625169-6d82-4f14-b5b6-fcf1bf374147">
+                <propertyInstance
+                  Id="03ead112-3b74-4ccc-bcfd-99e7755d14fe"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="9d3e2cae-8cab-43cb-9151-ac040da1a621"
+            isSubstitutable="false">
+            <classMoniker
+              Id="2607d750-1c8b-4633-a8e2-b9708f2a8c66"
+              LastKnownName="Reglement"
+              LastKnownLocation="BricaChoc2.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="01d9ea7c-ccd8-4472-852e-2851630ba471"
+        name="CB"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="a48bfdc9-ed63-480f-b1ec-d203b927e1d0"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="961e62c6-3ff7-4ee3-a65b-56356f6eca25">
+                <propertyInstance
+                  Id="da47530d-5fe2-446f-b91f-f33c3b8a4ba0"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="eaf62231-ed61-4aa0-9797-6438ca26efd9">
+                <propertyInstance
+                  Id="e563e4e7-e518-44bc-8c45-decabde78162"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4872a86c-c098-4d99-a2df-e90efc1d173d">
+                <propertyInstance
+                  Id="710ec7be-b5ee-4ca5-a201-7a68292206ae"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5e8c28ac-622d-4fae-b76e-08e2b8742c2a">
+                <propertyInstance
+                  Id="d39e621c-72c8-45dd-97a0-8a25240a8e20"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cff9a787-08f6-4c81-9a38-23eadab78067">
+                <propertyInstance
+                  Id="419c2bb3-c836-4c91-af17-57282e15be9f"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="9b935a18-f7ab-452b-841f-82dda54fb4b6"
+            isSubstitutable="false">
+            <classMoniker
+              Id="2607d750-1c8b-4633-a8e2-b9708f2a8c66"
+              LastKnownName="Reglement"
+              LastKnownLocation="BricaChoc2.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="3a3a892a-e05e-456d-bfe1-d2594a6611b8"
+        name="Cheque"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="7dfd3396-7a3f-4440-8215-0fceb7c5433f"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8ff6ea81-a559-418e-b288-788ffebccba0">
+                <propertyInstance
+                  Id="7827fa48-d9ce-4d5c-a84a-520cb35baee3"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0c73d170-0282-45c1-8a06-04a7698d905e">
+                <propertyInstance
+                  Id="9d70692d-aa8e-4e5c-94ba-23ad5a8bc261"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f257e5eb-f687-47ae-a1c6-ee3ec79bf5a3">
+                <propertyInstance
+                  Id="5084ae87-b3a6-4ed3-9991-9dd6b46b3fc4"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cfb20294-fe43-4acd-890c-d1ba6a9110e2">
+                <propertyInstance
+                  Id="3da19fe3-2e21-488a-8107-1dd4c5071da0"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e3ef898e-f949-43eb-9ce3-681994f6bcce">
+                <propertyInstance
+                  Id="8f52a3d9-9b0e-4a9d-bc29-b72613795f6a"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="243c98d5-86c1-4fd1-b06a-8ed7a33254fa"
+            isSubstitutable="false">
+            <classMoniker
+              Id="2607d750-1c8b-4633-a8e2-b9708f2a8c66"
+              LastKnownName="Reglement"
+              LastKnownLocation="BricaChoc2.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8fd4217d-0b1a-44df-beac-dc6d09133712"
+        name="Recu"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="77bc1cc1-17eb-44b5-80a6-d22a8fdf3f12"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="eaad0790-8499-4a6e-aadd-4c2ffbb0e790">
+                <propertyInstance
+                  Id="e4be8e71-94fe-4f98-8fb7-3faf19f8c723"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1e30d7b8-61c6-49c9-957e-bfa05dcc7756">
+                <propertyInstance
+                  Id="ef039bd9-6275-4511-a517-24164bb0666b"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ad3abb2f-08b5-486c-84bc-6a75a3c03db5">
+                <propertyInstance
+                  Id="ed5fdbb5-a6d8-4795-a54f-d9be4a203cb7"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3a89b73c-c2f3-4405-83cb-f56e939a281d">
+                <propertyInstance
+                  Id="b9cc6f4a-4187-4511-8f0e-7a268175f9b7"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d00284ce-2a73-4b6f-88c6-10daff86c81c">
+                <propertyInstance
+                  Id="536f7d97-8315-4405-bbaa-adc7218f129a"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="35ad8250-0bc8-4a70-b450-d59d2dad96fa"
+        name="Stock"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="779d7fe9-9fe9-4862-b075-3121de016d4c"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="000990f7-56f5-40e2-9a2a-ac0a1970963d">
+                <propertyInstance
+                  Id="e7ce818f-e2a8-41f2-ad47-837f3ffa7c85"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5a9be28c-0cc8-4e1d-968d-4e2006a7cddf">
+                <propertyInstance
+                  Id="4f8de4dd-d0e7-43a0-a33c-1a955fec2d81"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ddf1d0b0-f6ec-4b56-b6c0-1893d193369b">
+                <propertyInstance
+                  Id="4d7d39e2-d786-46c2-b6bd-2d6e0cc461dd"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9ce97012-23d3-46c3-a6d9-a1f7fddbf544">
+                <propertyInstance
+                  Id="af5659b3-3d1b-485e-868a-a89791896db6"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8bac3ec5-f931-4bd2-88f9-40036100353e">
+                <propertyInstance
+                  Id="26831683-e0b2-48f0-9f5b-9b47fcb95838"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="0f407939-b87c-4304-9605-ae7bb362df80"
+            isDerived="false"
+            sourceEndRoleName="Stock"
+            targetEndRoleName="Article"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="6c06f7fc-baf2-48b4-bc38-ccb8c3c0d3b6"
+              LastKnownName="Article"
+              LastKnownLocation="BricaChoc2.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="03ba2533-2c8a-4357-9504-c5ce213ac827"
+                  name="Stock"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2d19244d-a5a9-4a58-8826-2a0b0835d2e3"
+                  name="Article"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="106a0dca-ac30-44b4-a5b1-965551f68224"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="f4523fc9-447a-46aa-884c-13b87fb67f0d"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="99302627-d182-4e9a-a158-8b2c0b4432eb"
+            name="QteStock"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6c06f7fc-baf2-48b4-bc38-ccb8c3c0d3b6"
+        name="Article"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="82054285-124c-4860-ba19-45d47c18c90a"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f867d9a0-29d6-4c8b-b0d0-a38a6c50fb91">
+                <propertyInstance
+                  Id="759fcc25-af68-4d59-af59-76399f27ac22"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c2e77f20-c279-4766-a469-fd868f164db5">
+                <propertyInstance
+                  Id="0a232c25-9540-4770-9d61-d31de2efde7c"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a392bd4b-242e-45f6-ad66-566dbf9361de">
+                <propertyInstance
+                  Id="4d9c8c8c-978a-45e6-9dbe-8086c12b4aeb"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d6290344-db81-4566-a9c7-4459961c7b23">
+                <propertyInstance
+                  Id="eaa83b59-b28b-48f6-8124-77f9b7e15b0f"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2fc21eb5-3a36-4092-b23f-91810b3a6203">
+                <propertyInstance
+                  Id="afcad293-271f-4f36-a6ee-21d81bb9a2f7"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="f9955ee6-406b-4065-b90f-9d1f18c90784"
+            isDerived="false"
+            sourceEndRoleName="Article"
+            targetEndRoleName="Catalogue"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="48e56298-843e-460f-8851-98d1b0435a48"
+              LastKnownName="Catalogue"
+              LastKnownLocation="BricaChoc2.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="66efa34d-78e2-464e-8396-c172abd63a2f"
+                  name="Article"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="a27594d5-1728-4410-8cdb-9c32c1e936ef"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="e7c89a7e-91ba-44a7-b09c-1a15b090c39a"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="39ce9671-bdf3-4147-aae0-2bfe9db6cc67"
+                  name="Catalogue"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="7bf30775-2fd5-4d72-9e06-4cccbca77333"
+            name="CPU "
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="59f28ee7-2dfa-42c1-adbc-cb5f6d30447f"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4b936d76-5835-4839-8c1e-74cd1e789b65">
+                    <propertyInstance
+                      Id="bf75ce37-905a-4215-be8e-b0fcc9d014bc"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6cbd9113-0151-43fe-bd88-476151700355">
+                    <propertyInstance
+                      Id="69335d7f-3360-4534-b5ec-c7336c491b4a"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f056f526-d24a-4f87-b965-813999d2b2ba">
+                    <propertyInstance
+                      Id="d76dcde3-ce4a-45b6-abf3-454891c19451"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b0b1c828-ebc7-45c5-91b6-6505f4ffc405">
+                    <propertyInstance
+                      Id="c4d0702a-f041-4f92-ae84-c50266821449"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4f18aae1-78a9-4f6d-935e-a2df656d2afc">
+                    <propertyInstance
+                      Id="5a4298a8-3368-4736-a05c-eadd0a32a122"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ad7ed1e0-cf52-40df-8206-2881728ebeea">
+                    <propertyInstance
+                      Id="0b569968-a2d1-4364-a31b-ba02f32a3f06"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="04406ad3-2132-4413-be49-b292e6961535">
+                    <propertyInstance
+                      Id="9e6ade79-7159-4e99-bb56-1f8fe781fc9b"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <defaultValue>
+              <literalString
+                Id="9e5d10b8-62c0-4019-9a86-2cceb58b1d1a"
+                name="DefaultValue"
+                value="P2155" />
+            </defaultValue>
+          </property>
+          <property
+            Id="30b4de10-b3c2-4cab-a40e-e72636379304"
+            name="Libelle"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="1b799176-d5df-4469-97f1-7b9c1a91cce1"
+            name="prix"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="48e56298-843e-460f-8851-98d1b0435a48"
+        name="Catalogue"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="4c5db565-00b1-4976-966e-2d5c8a92054d"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="56d3189b-8873-45ff-a854-64bcc561e89f">
+                <propertyInstance
+                  Id="44e30786-8dc8-481a-91dd-37f7145efa76"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d8aba43f-c33c-4898-ab68-655690f6d948">
+                <propertyInstance
+                  Id="9062847b-b794-4501-93a9-347c9121c325"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="eab9df9e-8af0-4818-95ed-957ff040a732">
+                <propertyInstance
+                  Id="82a42f18-fe65-40cf-be88-08dac273fa8c"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fd66800f-01ab-43e8-bce0-250b6c19a871">
+                <propertyInstance
+                  Id="b4db36d5-8f70-4769-af47-625ec050fb67"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9197df8a-c1ca-4e18-8f79-9caac92a8d4b">
+                <propertyInstance
+                  Id="b90c9191-5718-48a8-9b81-c4378b7d46bd"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9b92356f-116a-49be-ba86-1bff026a27f9"
+        name="Caisse"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="130c0ecd-f7db-492a-95e7-3b17f24fc6e0"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c1780d10-0286-46f3-89cd-7dca9b9b1b1d">
+                <propertyInstance
+                  Id="f7b54930-0636-483c-a284-33b4045fb3d9"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9f2b7d8e-4bd4-49b9-8c67-bb8674c15b43">
+                <propertyInstance
+                  Id="fc1eb9a0-2da2-4f8e-a5b8-97ac3b7bf7f4"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b9d9c672-3162-458b-a964-7c7e80984594">
+                <propertyInstance
+                  Id="03751565-8cf9-4722-b31e-0cbe6121db1e"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9eb2d223-a2e2-4c70-ac37-baf05e71011c">
+                <propertyInstance
+                  Id="565f63e6-53a7-4b03-99e5-594eb35bde44"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="faae7924-818a-45b3-b388-581c89acf6bc">
+                <propertyInstance
+                  Id="2435d549-cbb0-4da5-aa1f-c479df68e4cd"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="8ed4545b-f491-4e0c-bf40-fac29211f3f7"
+            isDerived="false"
+            sourceEndRoleName="Caisse"
+            targetEndRoleName="Vente"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="a0794a05-394b-462b-8d61-c7052e9ad6e1"
+              LastKnownName="Vente"
+              LastKnownLocation="BricaChoc2.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="69028855-340b-46f5-b849-265678ecad8a"
+                  name="Caisse"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="118103e3-b527-4aa5-b704-1b0735a26f5a"
+                  name="Vente"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d29c9c48-75e6-446e-b28e-8192ba674ae5"
+        name="LigneVente1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="643b0144-8d93-4055-9a32-5ae303f555a9"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3bf6934d-66d3-4a8e-946f-f8a089bdcf16">
+                <propertyInstance
+                  Id="ebfe6332-4e9c-4309-b256-f337e2d348bc"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="88e1b1ae-cafb-47a6-9831-bb7dabfb7fac">
+                <propertyInstance
+                  Id="3d8d387a-112c-4134-9898-9dd2e20625da"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3ada579f-3cce-4932-8760-4fe7257cc4a1">
+                <propertyInstance
+                  Id="6a3b8dfa-da05-475e-922b-c3e0e22e76c0"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2435ade3-8296-4684-9105-2469ab0c4667">
+                <propertyInstance
+                  Id="eab44b95-45b2-42a5-9ec9-6458b5b906a9"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3501d8cb-9e61-45ae-9bea-b23d263dd475">
+                <propertyInstance
+                  Id="fc67dc2c-733f-4770-8b6d-32791834e1c0"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9fc15dc3-a73a-46ee-b227-12cc90324805"
+        name="Manager1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="390592e6-1f83-45bc-bcd0-81b9306c65ff"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b0cddb01-b930-449d-aedc-ed2da2c43d8c">
+                <propertyInstance
+                  Id="bd421075-5460-48cc-9b18-c1b9652f2c87"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d87d2ff6-71ac-457c-8eb1-85c411f24586">
+                <propertyInstance
+                  Id="89104f10-975f-426c-92ff-db69e76c6316"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0c5fcf09-92fb-4c54-b55a-2194ed904218">
+                <propertyInstance
+                  Id="3c9c3be4-eca0-42a0-9892-320a1c2befe9"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b416a381-8712-41d9-b436-7feeba97c016">
+                <propertyInstance
+                  Id="4994a319-ffa2-401d-8ac0-b952f5964903"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f21fb7e9-f30f-4439-bca4-0e8be8380173">
+                <propertyInstance
+                  Id="4d5cf7ad-3db7-4d5c-b4d7-b20960f2165c"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="c515ca74-6157-4385-9c8f-454aa290595a"
+            isDerived="false"
+            sourceEndRoleName="Gerer"
+            targetEndRoleName="Est gerer par"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="5b044097-aedc-4769-b6f4-9b86683ecdf0"
+              LastKnownName="Catalogue1"
+              LastKnownLocation="BricaChoc2.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7594b745-5b5c-4d08-bcfe-cd9bc8de3a5b"
+                  name="Gerer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="80e997ab-b983-4f2e-9883-6b2dda3cb875"
+                  name="Est gerer par"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="ac07b7c5-51df-4627-a566-f1afc5f7ea8e"
+            isDerived="false"
+            sourceEndRoleName="demarre"
+            targetEndRoleName="Est initialise par"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="eb5747e9-e0be-4e4c-99cb-263b4adc9d0e"
+              LastKnownName="Caisse1"
+              LastKnownLocation="BricaChoc2.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8717f997-d1b4-4869-92f6-d1bdfbb63985"
+                  name="demarre"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a8617ecd-cec2-4ff0-802e-4405be39435d"
+                  name="Est initialise par"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="44610b39-129a-4910-a054-3de716ec5e0f"
+        name="Vente1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="d602daf0-0d01-46e0-82a5-5425019648c9"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="29f7c6fb-d6e1-4370-9ccd-ee7488c4819a">
+                <propertyInstance
+                  Id="81b3e95f-2d44-4c4d-8af1-4121289048d1"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="04a14347-52d4-4f86-9056-5211595080c4">
+                <propertyInstance
+                  Id="5815c26c-71da-43bc-9970-3adca9720555"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="04f78c8f-fa56-40e6-bc53-b4cabd0236ab">
+                <propertyInstance
+                  Id="9ab6a03a-9ff8-474c-abaa-10329f255dc6"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a742399a-e0d8-40dd-ab44-e1d562144631">
+                <propertyInstance
+                  Id="2a725919-0922-4a4f-abac-2d9185e05d46"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="782bd1a7-baff-4536-a655-e54869842742">
+                <propertyInstance
+                  Id="126727b8-c516-4a1a-803a-3fd54979f8a8"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="1d2e520a-953a-4e12-811b-8111653bbe2c"
+            isDerived="false"
+            sourceEndRoleName="Composé de "
+            targetEndRoleName="Appartient"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="d29c9c48-75e6-446e-b28e-8192ba674ae5"
+              LastKnownName="LigneVente1"
+              LastKnownLocation="BricaChoc2.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d7da0974-67aa-4858-8d8b-fd36495f1258"
+                  name="Composé de "
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="c904d917-0bbf-45fc-a8de-8df234cf276a"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="90abdf06-e633-414d-9667-0486f1540bcd"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5e31935b-c89f-4c3e-b258-3cac58958aba"
+                  name="Appartient"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="36a75b58-b8a3-435d-aba4-f68c3bf9576f"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="a48582a9-11fd-4601-b89f-3d184a4ae01e"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="ce33025a-d729-4f40-882a-c8c304ccaf5a"
+            isDerived="false"
+            sourceEndRoleName="Vente1"
+            targetEndRoleName="Reglement1"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="bc605244-c309-4acf-9e5d-63342f1037ef"
+              LastKnownName="Reglement1"
+              LastKnownLocation="BricaChoc2.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="57568335-2ffb-404b-b8a9-ee5ebc2e4cd8"
+                  name="Vente1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="dc93989d-7c5b-4109-bdbc-081de712fa48"
+                  name="Reglement1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="836409cb-c822-494b-b2f9-e5ae0d47f3ff"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="a3123e7a-6177-4c6f-8f02-feae54f9be73"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="a369762c-007c-4cf0-b70c-e57c36fb1647"
+            isDerived="false"
+            sourceEndRoleName="Vente1"
+            targetEndRoleName="Recu1"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="c0cfebee-ea55-465f-ac8c-a4357ea432c7"
+              LastKnownName="Recu1"
+              LastKnownLocation="BricaChoc2.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cfe854b6-3a9c-431d-9a2d-0dd1c898f3db"
+                  name="Vente1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="220fe9ce-5d45-4f15-8739-8bc192b20fa3"
+                  name="Recu1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a5493dba-a53e-4783-97b1-ce9771dd0ce0"
+        name="Caissier1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="a36dee4b-8e43-41b0-b28d-9eaddab09f55"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="edcfb69c-39ec-4227-8981-c53dd913338e">
+                <propertyInstance
+                  Id="4e0e95c3-7d5d-4000-9321-80456392c4fc"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e65ad378-3535-4acf-8967-046c2ce9a95b">
+                <propertyInstance
+                  Id="13045b13-4a1c-43d3-aca6-bd4f94df3a47"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3ceaed9d-1b47-4776-96c2-32cf91129c2c">
+                <propertyInstance
+                  Id="b7fb1739-96b6-44a3-9fdc-2b76512594bd"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="dd114542-d453-4a0b-83e4-6e8e8a0aec56">
+                <propertyInstance
+                  Id="a14f291a-c03c-4f4d-bbd4-6204d6fa3b7b"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cdcec9e1-1828-4eb6-89eb-2287d5c5728e">
+                <propertyInstance
+                  Id="5e97130a-23a4-483f-9f7d-58ed0393388f"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="cb265ab0-88ce-46c5-af9f-63619b801f57"
+            isDerived="false"
+            sourceEndRoleName="Utilise"
+            targetEndRoleName="Utilise par"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="eb5747e9-e0be-4e4c-99cb-263b4adc9d0e"
+              LastKnownName="Caisse1"
+              LastKnownLocation="BricaChoc2.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9c3c8965-b3c4-4cdb-acfe-8f75048dc63d"
+                  name="Utilise"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="478f2684-3782-4b08-bf45-4b8f51130cbd"
+                  name="Utilise par"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="bc605244-c309-4acf-9e5d-63342f1037ef"
+        name="Reglement1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="be4c2c0f-f9d1-4775-9e70-023d03cb1262"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d2a3a4f4-1d9c-4f66-afad-37e2799fe206">
+                <propertyInstance
+                  Id="959b8914-0bc3-4f56-9055-20a2db4d65ac"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="df35a03d-fe5c-47b6-8180-2bef7aa6025c">
+                <propertyInstance
+                  Id="860b0685-792a-4173-90b4-e2d944fca834"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a33f872d-7b75-40b5-b59b-5a641f9e55c7">
+                <propertyInstance
+                  Id="a737a15c-fa1e-4148-a99a-2146db5571e8"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b864b153-9529-4c52-b5d7-60386154395a">
+                <propertyInstance
+                  Id="b1c75054-8a13-4611-9507-1e6b893525be"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7b5adad5-8176-4d16-8841-cea01516c46a">
+                <propertyInstance
+                  Id="8e661f9d-e8d1-472e-8221-c343a3af0b1c"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="19d897ed-e152-4223-a8d8-3d26eaf2c5f1"
+        name="Espece1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="f3aea693-5d0d-47c8-9508-b7ed4293fb61"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0ef9d8bf-84d6-4b98-8a04-a340094ef73a">
+                <propertyInstance
+                  Id="f1ad09e6-c301-4799-9375-aba8f8e72af2"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="00a49b1f-61ca-44dd-a8ff-e642b401e350">
+                <propertyInstance
+                  Id="0b51378b-c097-43e1-a190-7e413ea750ad"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="14a10c60-7d1f-4574-b2fb-754b96be33cb">
+                <propertyInstance
+                  Id="ea3a906e-be58-48c6-b724-667ae7b50bdc"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f2798c3c-dd13-44b8-807e-be471a742b0b">
+                <propertyInstance
+                  Id="e2c89945-f6fa-4c38-8528-d6da8243b823"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1a5482da-1549-4d64-b785-b6e73f4cd8dc">
+                <propertyInstance
+                  Id="60ba86c5-b4c2-48bb-bb8e-6a10d09077af"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="8eba5272-0398-4917-86c8-389feebe7b05"
+            isSubstitutable="false">
+            <classMoniker
+              Id="bc605244-c309-4acf-9e5d-63342f1037ef"
+              LastKnownName="Reglement1"
+              LastKnownLocation="BricaChoc2.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7d421ad4-7802-4516-9234-5bf8756fcab0"
+        name="CB1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="deedb8f5-4dce-4421-a065-747fd7e753fa"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="00b38a71-44cd-4887-bfb9-b9868ddc7404">
+                <propertyInstance
+                  Id="37451de2-3e2b-42a0-bb93-4d4ba456d604"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1953f754-c0b7-4aa8-89b7-5e5c97a982ec">
+                <propertyInstance
+                  Id="ea73f000-cf27-46e3-954d-049dde906a86"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1886c824-419c-46af-8143-2e8be75de116">
+                <propertyInstance
+                  Id="0f6958d2-e058-45ab-875b-95164ed338ae"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="32bf03c6-6025-49f9-8e19-537bcfea6cd7">
+                <propertyInstance
+                  Id="dc156988-d911-48c8-896c-25c1e1cf4b5e"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="05707c3a-7c60-477a-befe-9bf75a311261">
+                <propertyInstance
+                  Id="9edff20b-ddca-4a08-93ed-d0ff933a43a3"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="54186849-bc6a-4dae-8ff9-338e5e15a2de"
+            isSubstitutable="false">
+            <classMoniker
+              Id="bc605244-c309-4acf-9e5d-63342f1037ef"
+              LastKnownName="Reglement1"
+              LastKnownLocation="BricaChoc2.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e1608003-1ee7-4481-bc17-67a71eecc588"
+        name="Cheque1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="3ce2e8ad-ce60-47b0-a6a5-8e3ccd833d08"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="794f1197-8d0c-48ad-b5f2-b69d16a61690">
+                <propertyInstance
+                  Id="c6e65391-9631-4961-9763-b94961b16a27"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7535e3db-2abd-476a-84d5-e3769c631056">
+                <propertyInstance
+                  Id="f6df290c-3cf3-4b2b-82ce-ec67f0b49a9f"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="45aa3bee-6ddd-4129-b56c-82d12e2dc46b">
+                <propertyInstance
+                  Id="d43a4b94-c88b-4fe6-9b67-2d053edaee73"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fc96278d-646f-48be-b54f-595ab0a8870c">
+                <propertyInstance
+                  Id="2894a9dd-2103-4b10-aff5-7fdcaf96e87a"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3ce34387-1078-43b9-9e99-8dbc51cbd944">
+                <propertyInstance
+                  Id="c29b904e-965a-4a7e-acb2-ca5f9f235846"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="4cc1bd01-5259-4696-a279-7ea2ed843ab8"
+            isSubstitutable="false">
+            <classMoniker
+              Id="bc605244-c309-4acf-9e5d-63342f1037ef"
+              LastKnownName="Reglement1"
+              LastKnownLocation="BricaChoc2.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c0cfebee-ea55-465f-ac8c-a4357ea432c7"
+        name="Recu1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="246555d1-b4cd-472c-81dd-bce02f5afc15"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="60cdf74a-9203-424e-859b-b0d3b6465e00">
+                <propertyInstance
+                  Id="22b61ea4-7796-4594-87ac-ebce0d6d2263"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0f317d74-47de-4f07-a8e0-bd0da53b625d">
+                <propertyInstance
+                  Id="11effdda-56ca-4b38-b303-1812bc26526e"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a357b2e3-bffd-41a6-936b-a9d480b87d6a">
+                <propertyInstance
+                  Id="07c18359-b2a3-458d-ae0a-1f7783cf81ff"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="31608886-9045-4f3d-a6d0-a9e46670c01a">
+                <propertyInstance
+                  Id="a3776956-9baa-4d2c-a1d9-0cf539e25a93"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="faa9f74c-b94a-4a98-b8f2-35e32192249d">
+                <propertyInstance
+                  Id="ee64c787-229b-47d5-b911-6409fbb70b3a"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="3950c47a-4a46-424f-8471-8987f989a7c6"
+        name="Stock"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="6e643d1f-556f-4b58-a8e9-733671a0b123"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f481d7c8-29c4-41c5-87b5-c2e7c27554a5">
+                <propertyInstance
+                  Id="5d39637d-ed96-487f-9b5e-ca8603738b2c"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="bcc54fcc-6a10-4e5d-b7b5-2ce1af62ee42">
+                <propertyInstance
+                  Id="5055c3a2-e68a-46de-8b7a-3f2799e7426a"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="84be5b4b-a178-40a7-a520-2ca41c2406f5">
+                <propertyInstance
+                  Id="b77c9f40-e124-43de-8066-bc8d2d274b74"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d159e07f-004c-4b63-afb3-cd153c3e8d88">
+                <propertyInstance
+                  Id="e96ed59f-eb7d-4a77-abab-aaaac07b8591"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="463341cc-1817-43e5-954b-d9970ce1c2fe">
+                <propertyInstance
+                  Id="b7fdebd0-b979-4948-a1cc-bd25afc95a05"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="c44c353a-0074-4b06-b2d1-968c26df4c1f"
+            isDerived="false"
+            sourceEndRoleName="Stock"
+            targetEndRoleName="Article"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="87231e6b-2db7-41df-a59f-502b626c0511"
+              LastKnownName="Article1"
+              LastKnownLocation="BricaChoc2.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="973c37ba-8089-4230-9d06-42b98ea59f7f"
+                  name="Stock"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fdf88f4c-c567-4c2e-b87d-dfa939bd42ad"
+                  name="Article"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="35205a32-3ef0-4b8e-9758-985c92e8d347"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="ef515701-9817-4bb5-bc10-57f07bce62e0"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="87231e6b-2db7-41df-a59f-502b626c0511"
+        name="Article1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="c5c6974c-f860-41d1-9bd5-d4551ab067d3"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="78c7b1bd-f24d-44b8-af45-07c570051fc2">
+                <propertyInstance
+                  Id="fbf39b66-08a4-48e4-abb3-d3f88fd9e1f6"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="53f0a9e8-5907-4da8-9054-3d04d951c194">
+                <propertyInstance
+                  Id="c5e612a4-aa24-4121-b6bc-4fd1192f419b"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6030080e-96e7-440a-8394-7af98c7b95cd">
+                <propertyInstance
+                  Id="3d7cfb6d-835d-46f1-b797-e7b75e05df56"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7d04b608-1145-4f5b-ba8a-445a41e22c92">
+                <propertyInstance
+                  Id="b50f0505-be94-4c77-9d2c-a4e7a37574f7"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="122dabd8-6ac6-428b-ad36-df8cea0db6cd">
+                <propertyInstance
+                  Id="4163d816-d5c5-48b0-ac44-c1fdce5320f3"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="7844c216-3a85-4221-8277-61489e9ee98c"
+            isDerived="false"
+            sourceEndRoleName="Fait partie de"
+            targetEndRoleName="Est composer de "
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="5b044097-aedc-4769-b6f4-9b86683ecdf0"
+              LastKnownName="Catalogue1"
+              LastKnownLocation="BricaChoc2.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="807181d8-c8cf-43fc-bb62-382c34012905"
+                  name="Fait partie de"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="387861bb-f448-46b8-9838-afd56381f6e3"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="3c44ca2c-82d1-4f7c-a0d6-3872416c80d0"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="05f958b6-2df9-482a-bc41-e7c3e77a13eb"
+                  name="Est composer de "
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="69d90e90-f668-4b5d-819e-907b3cf99fe7"
+            isDerived="false"
+            sourceEndRoleName="Article"
+            targetEndRoleName="LigneVente"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="d29c9c48-75e6-446e-b28e-8192ba674ae5"
+              LastKnownName="LigneVente1"
+              LastKnownLocation="BricaChoc2.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3bcaa38e-a52a-4258-a4fd-2ddf117412be"
+                  name="Article"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9f902b07-5f6f-451a-bc51-9518c56d8c31"
+                  name="LigneVente"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="0e53338f-77e0-4cbd-aa26-abb9807fab4d"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="8a33b624-0b1f-4d51-a7df-89fb15286ed8"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="f74078b5-59b6-4bcb-bae9-569fef84260a"
+            name="CPU "
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e21dbb95-ca9f-466d-9da3-c96ded1b74bc"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="34ef76b7-1cd8-415a-89f6-07b07c82bd6e">
+                    <propertyInstance
+                      Id="d3084821-1756-4983-8241-a7894abffda5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cdb93590-f361-41bc-b439-618ea581cca5">
+                    <propertyInstance
+                      Id="820b47b6-db09-4974-a69e-eef27337b980"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a2bc4fab-bb19-4e9a-b991-0ed991cc1ff1">
+                    <propertyInstance
+                      Id="342a6375-0bfc-4f8e-bf61-63045a08d084"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ddd4d8ac-c594-49f0-adb9-5a1106e8bc69">
+                    <propertyInstance
+                      Id="5e727789-0e23-48c1-8352-b49658ddb9b9"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6d61b820-b22f-439d-bd7e-880115b5fc34">
+                    <propertyInstance
+                      Id="0e01ff0a-4cb7-49b0-9ef5-5b80912484f7"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dd872c0c-aee2-437d-a466-c3d706fb065c">
+                    <propertyInstance
+                      Id="9410cd02-e09c-49c3-8caf-2f180fd989ed"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="acb14159-335f-4b98-873f-7e4b33787418">
+                    <propertyInstance
+                      Id="f26dd47b-ffaa-4ec8-9703-7f344a1e32a6"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <defaultValue>
+              <literalString
+                Id="acd79f95-de76-4211-80d6-7e98efa2fcd7"
+                name="DefaultValue"
+                value="P2155" />
+            </defaultValue>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5b044097-aedc-4769-b6f4-9b86683ecdf0"
+        name="Catalogue1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="6f3a1f27-64ca-4cc8-b3ae-0426569b70c8"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c69a0f83-d10e-49a0-aeb3-e45032e5c675">
+                <propertyInstance
+                  Id="17d4698f-0dc4-4c55-a090-a39a505b1b35"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4868a333-20fb-45e0-a6b8-36c457ddb13a">
+                <propertyInstance
+                  Id="f4408cd2-a86f-43fe-a6d2-d09fa42b3ea0"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d8e7dddb-7620-4cad-af6b-fb7e3f94d258">
+                <propertyInstance
+                  Id="ccb65c65-a4ae-4d5d-9318-e5dd1c863d16"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="529f23fc-37e1-4692-bd7d-a8eb29f06215">
+                <propertyInstance
+                  Id="0566e72b-8c8a-4d36-9f6f-85f701e5d1e8"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="05eb038d-6bff-4487-9efc-a5369da267e3">
+                <propertyInstance
+                  Id="6fcab05c-ea2e-4d5c-a0b0-2325e5e253fd"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="eb5747e9-e0be-4e4c-99cb-263b4adc9d0e"
+        name="Caisse1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="4e3927d8-5c95-4fd7-be05-f2e4c2a8e9cb"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e2f276b8-f95f-4eb3-9331-44c279b46735">
+                <propertyInstance
+                  Id="5726ae75-745e-4028-9ef9-cf18c41e3da2"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3ea90917-7962-4e56-b2c8-9c65f8287e61">
+                <propertyInstance
+                  Id="9ebf8e5d-37d0-42c6-ae5f-ef019245d98e"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e5005513-e7f9-4bff-95f8-3f17858a73f5">
+                <propertyInstance
+                  Id="94f36495-37af-4442-acf8-128f52368bfa"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ecd09f77-9d1e-481e-a1f6-3b7d8914a338">
+                <propertyInstance
+                  Id="94d14482-4830-4cfd-85f7-105aac187085"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d91c113d-f628-4aa2-97d2-6034b887998f">
+                <propertyInstance
+                  Id="b4087730-0312-4520-a30a-9545928a11e8"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="b09fe254-88f8-4ec9-aa70-938912bd5409"
+            isDerived="false"
+            sourceEndRoleName="Caisse"
+            targetEndRoleName="Vente"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="44610b39-129a-4910-a054-3de716ec5e0f"
+              LastKnownName="Vente1"
+              LastKnownLocation="BricaChoc2.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b10687ed-4e5e-44e4-a84f-b710248f7b3a"
+                  name="Caisse"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9fff824a-90f2-46b6-bb15-9987d83b8c4e"
+                  name="Vente"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="3e0ed62b-6c82-4ad2-838d-35aef8f09307"
+        name="Sequence1"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="a24b58d5-4c65-4589-a12d-9585aac7ee26"
+            name="BehaviorExecutionSpecification1">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="a701ab48-ecce-4001-9f99-d1e55f8e9549"
+                LastKnownName="Lifeline2"
+                LastKnownLocation="BricaChoc2.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="063f0647-ec49-40be-84ba-44f91883c567"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="BricaChoc2.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="e3f2be78-9750-464b-8039-5e2ba9a8f4c0"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="BricaChoc2.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="e78533a6-bf07-4573-a84a-7ac720adcf09"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="BricaChoc2.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="c86eb71c-c854-4648-9b5f-9fc6739b9e22"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="BricaChoc2.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="e3f2be78-9750-464b-8039-5e2ba9a8f4c0"
+            name="ExecutionOccurrenceSpecification1">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="aa54ec58-ef1c-45fe-a932-3666625ec6f6"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="BricaChoc2.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="a701ab48-ecce-4001-9f99-d1e55f8e9549"
+                LastKnownName="Lifeline2"
+                LastKnownLocation="BricaChoc2.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="80aea44b-6cb7-4bdc-9eb1-72be9dc0ff40"
+            name="MessageOccurrenceSpecification1">
+            <covered>
+              <lifelineMoniker
+                Id="0b3682c6-93be-4be8-bed0-92a487bc8078"
+                LastKnownName="Lifeline1"
+                LastKnownLocation="BricaChoc2.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="e78533a6-bf07-4573-a84a-7ac720adcf09"
+            name="MessageOccurrenceSpecification2">
+            <covered>
+              <lifelineMoniker
+                Id="a701ab48-ecce-4001-9f99-d1e55f8e9549"
+                LastKnownName="Lifeline2"
+                LastKnownLocation="BricaChoc2.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="c86eb71c-c854-4648-9b5f-9fc6739b9e22"
+            name="MessageOccurrenceSpecification3">
+            <covered>
+              <lifelineMoniker
+                Id="a701ab48-ecce-4001-9f99-d1e55f8e9549"
+                LastKnownName="Lifeline2"
+                LastKnownLocation="BricaChoc2.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="7e8ac46c-9d50-43f7-9608-dd2433f96403"
+            name="MessageOccurrenceSpecification4">
+            <covered>
+              <lifelineMoniker
+                Id="0b3682c6-93be-4be8-bed0-92a487bc8078"
+                LastKnownName="Lifeline1"
+                LastKnownLocation="BricaChoc2.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="063f0647-ec49-40be-84ba-44f91883c567"
+            name="ExecutionOccurrenceSpecification2">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="831a1be1-7af6-44ae-bcbe-e9bd0e0a5eab"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="BricaChoc2.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="a701ab48-ecce-4001-9f99-d1e55f8e9549"
+                LastKnownName="Lifeline2"
+                LastKnownLocation="BricaChoc2.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="0b3682c6-93be-4be8-bed0-92a487bc8078"
+            name="Lifeline1"
+            isActor="false"
+            lifelineDisplayName="Lifeline1">
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="80aea44b-6cb7-4bdc-9eb1-72be9dc0ff40"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="BricaChoc2.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="7e8ac46c-9d50-43f7-9608-dd2433f96403"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="BricaChoc2.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="a701ab48-ecce-4001-9f99-d1e55f8e9549"
+            name="Lifeline2"
+            isActor="false"
+            lifelineDisplayName="Lifeline2">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="e3f2be78-9750-464b-8039-5e2ba9a8f4c0"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="BricaChoc2.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="063f0647-ec49-40be-84ba-44f91883c567"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="BricaChoc2.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="cba07f1c-76ab-43cc-96fc-cceac237f089"
+            name="Message1"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="80aea44b-6cb7-4bdc-9eb1-72be9dc0ff40"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="BricaChoc2.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="e78533a6-bf07-4573-a84a-7ac720adcf09"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="BricaChoc2.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="73376a47-baed-436f-ab6b-ff12aa6e9612"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="c86eb71c-c854-4648-9b5f-9fc6739b9e22"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="BricaChoc2.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="7e8ac46c-9d50-43f7-9608-dd2433f96403"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="BricaChoc2.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="aa54ec58-ef1c-45fe-a932-3666625ec6f6"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="831a1be1-7af6-44ae-bcbe-e9bd0e0a5eab"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="eccd75eb-1f89-4e96-a0b6-570f4a6dc85a"
+        name="SequenceTraiterVente"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="1c0b9316-1429-407f-9b45-1010b75fc257"
+            name="BehaviorExecutionSpecification1">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="1ba7c91e-e090-43ba-a969-59c240a87928"
+                LastKnownName=": ControleurCat"
+                LastKnownLocation="BricaChoc2.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="42f676c4-1c85-4171-b27e-a6ada6e79ead"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="BricaChoc2.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="a0807845-a3af-4cc8-9143-44eb48986f03"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="BricaChoc2.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="acd1cd44-e45c-4506-8b8a-caaa1a60165f"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="BricaChoc2.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="afae1889-d8c6-4e2b-822d-9b0e1ab516e8"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="BricaChoc2.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="a0807845-a3af-4cc8-9143-44eb48986f03"
+            name="ExecutionOccurrenceSpecification1">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="a593a278-bd62-4acd-a277-3e2e6d9e0f0a"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="BricaChoc2.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="1ba7c91e-e090-43ba-a969-59c240a87928"
+                LastKnownName=": ControleurCat"
+                LastKnownLocation="BricaChoc2.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="0fef669b-dcaf-4f3c-bfe1-8ef3e42d7ce6"
+            name="MessageOccurrenceSpecification1">
+            <covered>
+              <lifelineMoniker
+                Id="2eb91c94-152a-4b9f-9a13-dda00a165a5a"
+                LastKnownName=": IHM"
+                LastKnownLocation="BricaChoc2.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="acd1cd44-e45c-4506-8b8a-caaa1a60165f"
+            name="MessageOccurrenceSpecification2">
+            <covered>
+              <lifelineMoniker
+                Id="1ba7c91e-e090-43ba-a969-59c240a87928"
+                LastKnownName=": ControleurCat"
+                LastKnownLocation="BricaChoc2.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="e6130708-a63e-42c4-835d-74a898fd64bc"
+            name="BehaviorExecutionSpecification3">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="c8042568-0a86-4180-97de-3879186cb335"
+                LastKnownName=": Catalogue"
+                LastKnownLocation="BricaChoc2.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="fe3bd6f1-a7aa-4b00-9368-576c03ac74dc"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="BricaChoc2.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="af18dfcc-cc8b-4632-9c01-d4311ab4f0f7"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="BricaChoc2.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="a67e0dc8-f472-45b9-8bdb-0c3f4225e4b5"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="BricaChoc2.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="af18dfcc-cc8b-4632-9c01-d4311ab4f0f7"
+            name="ExecutionOccurrenceSpecification5">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="a6d4db4a-7ea0-4479-8d9e-356e5d646e2c"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="BricaChoc2.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="c8042568-0a86-4180-97de-3879186cb335"
+                LastKnownName=": Catalogue"
+                LastKnownLocation="BricaChoc2.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="afae1889-d8c6-4e2b-822d-9b0e1ab516e8"
+            name="MessageOccurrenceSpecification5">
+            <covered>
+              <lifelineMoniker
+                Id="1ba7c91e-e090-43ba-a969-59c240a87928"
+                LastKnownName=": ControleurCat"
+                LastKnownLocation="BricaChoc2.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="a67e0dc8-f472-45b9-8bdb-0c3f4225e4b5"
+            name="MessageOccurrenceSpecification6">
+            <covered>
+              <lifelineMoniker
+                Id="c8042568-0a86-4180-97de-3879186cb335"
+                LastKnownName=": Catalogue"
+                LastKnownLocation="BricaChoc2.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="42f676c4-1c85-4171-b27e-a6ada6e79ead"
+            name="ExecutionOccurrenceSpecification2">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="103a89e1-42f3-46a4-84f1-b795f40895ee"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="BricaChoc2.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="1ba7c91e-e090-43ba-a969-59c240a87928"
+                LastKnownName=": ControleurCat"
+                LastKnownLocation="BricaChoc2.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="fe3bd6f1-a7aa-4b00-9368-576c03ac74dc"
+            name="ExecutionOccurrenceSpecification6">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="de9ae0b2-d067-4947-9f0c-cf173c613192"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="BricaChoc2.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="c8042568-0a86-4180-97de-3879186cb335"
+                LastKnownName=": Catalogue"
+                LastKnownLocation="BricaChoc2.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="5c31680d-6880-4d5e-b74f-24e9f1a3382e"
+            name="BehaviorExecutionSpecification5">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="1ba7c91e-e090-43ba-a969-59c240a87928"
+                LastKnownName=": ControleurCat"
+                LastKnownLocation="BricaChoc2.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="df8d3002-cb0d-40ba-a9b7-0e489d5688f1"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="BricaChoc2.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="f1b6f330-89c5-4961-9d1c-8e17fdab2ce9"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="BricaChoc2.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="1a9d1d75-edfa-4243-a6d4-19c09c9bd1be"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="BricaChoc2.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="04df7839-b506-4260-a839-7d2471236a13"
+                LastKnownName="MessageOccurrenceSpecification23"
+                LastKnownLocation="BricaChoc2.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="f1b6f330-89c5-4961-9d1c-8e17fdab2ce9"
+            name="ExecutionOccurrenceSpecification9">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="55312f12-cb96-4064-b0b4-b4c23199b870"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="BricaChoc2.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="1ba7c91e-e090-43ba-a969-59c240a87928"
+                LastKnownName=": ControleurCat"
+                LastKnownLocation="BricaChoc2.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="1a9d1d75-edfa-4243-a6d4-19c09c9bd1be"
+            name="MessageOccurrenceSpecification10">
+            <covered>
+              <lifelineMoniker
+                Id="1ba7c91e-e090-43ba-a969-59c240a87928"
+                LastKnownName=": ControleurCat"
+                LastKnownLocation="BricaChoc2.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="17d75266-738b-476b-8f59-2513b9e2fb86"
+            name="MessageOccurrenceSpecification9">
+            <covered>
+              <lifelineMoniker
+                Id="2eb91c94-152a-4b9f-9a13-dda00a165a5a"
+                LastKnownName=": IHM"
+                LastKnownLocation="BricaChoc2.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="69ce128b-4e40-43c4-a0ef-69dce228fb8d"
+            name="BehaviorExecutionSpecification10">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="ff629eb0-7886-4a61-aaa5-b09f4d333630"
+                LastKnownName=": Fabrique Produit"
+                LastKnownLocation="BricaChoc2.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="e03e16f1-ceb5-4f4c-94f9-63f9a282891b"
+                LastKnownName="ExecutionOccurrenceSpecification20"
+                LastKnownLocation="BricaChoc2.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="57b39182-8678-43c8-983a-8bbad827cfe3"
+                LastKnownName="ExecutionOccurrenceSpecification19"
+                LastKnownLocation="BricaChoc2.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="0d581300-8313-451c-9b97-94b82c450b66"
+                LastKnownName="MessageOccurrenceSpecification24"
+                LastKnownLocation="BricaChoc2.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="64acffc8-9a80-48a7-bf47-cc51eeef69f4"
+                LastKnownName="MessageOccurrenceSpecification25"
+                LastKnownLocation="BricaChoc2.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="8e585a96-c0da-4fe6-99fc-5c6929d3a8fd"
+                LastKnownName="MessageOccurrenceSpecification28"
+                LastKnownLocation="BricaChoc2.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="57b39182-8678-43c8-983a-8bbad827cfe3"
+            name="ExecutionOccurrenceSpecification19">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="ba572064-26cb-4adf-ac6e-9301a3c3e8ec"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="BricaChoc2.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="ff629eb0-7886-4a61-aaa5-b09f4d333630"
+                LastKnownName=": Fabrique Produit"
+                LastKnownLocation="BricaChoc2.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="0d581300-8313-451c-9b97-94b82c450b66"
+            name="MessageOccurrenceSpecification24">
+            <covered>
+              <lifelineMoniker
+                Id="ff629eb0-7886-4a61-aaa5-b09f4d333630"
+                LastKnownName=": Fabrique Produit"
+                LastKnownLocation="BricaChoc2.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="04df7839-b506-4260-a839-7d2471236a13"
+            name="MessageOccurrenceSpecification23">
+            <covered>
+              <lifelineMoniker
+                Id="1ba7c91e-e090-43ba-a969-59c240a87928"
+                LastKnownName=": ControleurCat"
+                LastKnownLocation="BricaChoc2.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="3194789b-4abf-4946-a935-fa8a83c50c19"
+            name="BehaviorExecutionSpecification11">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="0614e44d-d6e4-41b0-9be5-8cdc0a8d1b6c"
+                LastKnownName=": Produit"
+                LastKnownLocation="BricaChoc2.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="d686eb61-be0c-44c4-a500-469f987eb849"
+                LastKnownName="ExecutionOccurrenceSpecification22"
+                LastKnownLocation="BricaChoc2.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="bc4c2ea8-eea4-4bf4-a04c-173324ee7fae"
+                LastKnownName="ExecutionOccurrenceSpecification21"
+                LastKnownLocation="BricaChoc2.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="611294ec-de89-4c7e-9121-cd49cb448b01"
+                LastKnownName="MessageOccurrenceSpecification26"
+                LastKnownLocation="BricaChoc2.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="705e71e5-b904-4b89-8a17-c73d09acf79c"
+                LastKnownName="MessageOccurrenceSpecification27"
+                LastKnownLocation="BricaChoc2.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="bc4c2ea8-eea4-4bf4-a04c-173324ee7fae"
+            name="ExecutionOccurrenceSpecification21">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="2b166249-e930-4ca3-950c-e6242a0632ef"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="BricaChoc2.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="0614e44d-d6e4-41b0-9be5-8cdc0a8d1b6c"
+                LastKnownName=": Produit"
+                LastKnownLocation="BricaChoc2.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="64acffc8-9a80-48a7-bf47-cc51eeef69f4"
+            name="MessageOccurrenceSpecification25">
+            <covered>
+              <lifelineMoniker
+                Id="ff629eb0-7886-4a61-aaa5-b09f4d333630"
+                LastKnownName=": Fabrique Produit"
+                LastKnownLocation="BricaChoc2.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="611294ec-de89-4c7e-9121-cd49cb448b01"
+            name="MessageOccurrenceSpecification26">
+            <covered>
+              <lifelineMoniker
+                Id="0614e44d-d6e4-41b0-9be5-8cdc0a8d1b6c"
+                LastKnownName=": Produit"
+                LastKnownLocation="BricaChoc2.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="df8d3002-cb0d-40ba-a9b7-0e489d5688f1"
+            name="ExecutionOccurrenceSpecification10">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="9123ab42-3ac1-424a-a8af-1c3c5ebcf35e"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="BricaChoc2.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="1ba7c91e-e090-43ba-a969-59c240a87928"
+                LastKnownName=": ControleurCat"
+                LastKnownLocation="BricaChoc2.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="705e71e5-b904-4b89-8a17-c73d09acf79c"
+            name="MessageOccurrenceSpecification27">
+            <covered>
+              <lifelineMoniker
+                Id="0614e44d-d6e4-41b0-9be5-8cdc0a8d1b6c"
+                LastKnownName=": Produit"
+                LastKnownLocation="BricaChoc2.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="8e585a96-c0da-4fe6-99fc-5c6929d3a8fd"
+            name="MessageOccurrenceSpecification28">
+            <covered>
+              <lifelineMoniker
+                Id="ff629eb0-7886-4a61-aaa5-b09f4d333630"
+                LastKnownName=": Fabrique Produit"
+                LastKnownLocation="BricaChoc2.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="d686eb61-be0c-44c4-a500-469f987eb849"
+            name="ExecutionOccurrenceSpecification22">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="acdf7e55-ac6f-4755-8416-8735b20d715c"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="BricaChoc2.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="0614e44d-d6e4-41b0-9be5-8cdc0a8d1b6c"
+                LastKnownName=": Produit"
+                LastKnownLocation="BricaChoc2.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="e03e16f1-ceb5-4f4c-94f9-63f9a282891b"
+            name="ExecutionOccurrenceSpecification20">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="eb91b73a-b9d8-42f3-adf4-80c43aac5a53"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="BricaChoc2.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="ff629eb0-7886-4a61-aaa5-b09f4d333630"
+                LastKnownName=": Fabrique Produit"
+                LastKnownLocation="BricaChoc2.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="4ece8084-a28b-474e-8a6b-8488bf23e960"
+            name="BehaviorExecutionSpecification12">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="c8042568-0a86-4180-97de-3879186cb335"
+                LastKnownName=": Catalogue"
+                LastKnownLocation="BricaChoc2.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="687faec2-0088-425b-9885-15564c3eb73a"
+                LastKnownName="ExecutionOccurrenceSpecification24"
+                LastKnownLocation="BricaChoc2.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="10408631-4289-4253-bd27-59940a94f4c0"
+                LastKnownName="ExecutionOccurrenceSpecification23"
+                LastKnownLocation="BricaChoc2.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="be9b4312-8eb4-480f-9843-8c8071745a51"
+                LastKnownName="MessageOccurrenceSpecification30"
+                LastKnownLocation="BricaChoc2.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="10408631-4289-4253-bd27-59940a94f4c0"
+            name="ExecutionOccurrenceSpecification23">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="4e5b544f-8d1e-4ea2-a18d-55cadb7a9607"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="BricaChoc2.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="c8042568-0a86-4180-97de-3879186cb335"
+                LastKnownName=": Catalogue"
+                LastKnownLocation="BricaChoc2.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="e0c79ecb-4716-442c-9059-f1dfc24b982f"
+            name="MessageOccurrenceSpecification29">
+            <covered>
+              <lifelineMoniker
+                Id="ff629eb0-7886-4a61-aaa5-b09f4d333630"
+                LastKnownName=": Fabrique Produit"
+                LastKnownLocation="BricaChoc2.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="be9b4312-8eb4-480f-9843-8c8071745a51"
+            name="MessageOccurrenceSpecification30">
+            <covered>
+              <lifelineMoniker
+                Id="c8042568-0a86-4180-97de-3879186cb335"
+                LastKnownName=": Catalogue"
+                LastKnownLocation="BricaChoc2.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="687faec2-0088-425b-9885-15564c3eb73a"
+            name="ExecutionOccurrenceSpecification24">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="8eb65e06-e50d-4c7e-9279-cf1baee0a359"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="BricaChoc2.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="c8042568-0a86-4180-97de-3879186cb335"
+                LastKnownName=": Catalogue"
+                LastKnownLocation="BricaChoc2.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="2eb91c94-152a-4b9f-9a13-dda00a165a5a"
+            name=": IHM"
+            isActor="false"
+            lifelineDisplayName=": IHM">
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="0fef669b-dcaf-4f3c-bfe1-8ef3e42d7ce6"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="BricaChoc2.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="17d75266-738b-476b-8f59-2513b9e2fb86"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="BricaChoc2.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="1ba7c91e-e090-43ba-a969-59c240a87928"
+            name=": ControleurCat"
+            isActor="false"
+            lifelineDisplayName=": ControleurCat">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="a0807845-a3af-4cc8-9143-44eb48986f03"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="BricaChoc2.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="42f676c4-1c85-4171-b27e-a6ada6e79ead"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="BricaChoc2.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="f1b6f330-89c5-4961-9d1c-8e17fdab2ce9"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="BricaChoc2.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="df8d3002-cb0d-40ba-a9b7-0e489d5688f1"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="BricaChoc2.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="c8042568-0a86-4180-97de-3879186cb335"
+            name=": Catalogue"
+            isActor="false"
+            lifelineDisplayName=": Catalogue">
+            <represents>
+              <propertyMoniker
+                Id="42c2f2f4-545d-4ab5-95df-9a782f912d4f"
+                LastKnownLocation="BricaChoc2.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="af18dfcc-cc8b-4632-9c01-d4311ab4f0f7"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="BricaChoc2.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="fe3bd6f1-a7aa-4b00-9368-576c03ac74dc"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="BricaChoc2.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="10408631-4289-4253-bd27-59940a94f4c0"
+                LastKnownName="ExecutionOccurrenceSpecification23"
+                LastKnownLocation="BricaChoc2.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="687faec2-0088-425b-9885-15564c3eb73a"
+                LastKnownName="ExecutionOccurrenceSpecification24"
+                LastKnownLocation="BricaChoc2.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="ff629eb0-7886-4a61-aaa5-b09f4d333630"
+            name=": Fabrique Produit"
+            isActor="false"
+            lifelineDisplayName=": Fabrique Produit">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="57b39182-8678-43c8-983a-8bbad827cfe3"
+                LastKnownName="ExecutionOccurrenceSpecification19"
+                LastKnownLocation="BricaChoc2.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="e03e16f1-ceb5-4f4c-94f9-63f9a282891b"
+                LastKnownName="ExecutionOccurrenceSpecification20"
+                LastKnownLocation="BricaChoc2.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="e0c79ecb-4716-442c-9059-f1dfc24b982f"
+                LastKnownName="MessageOccurrenceSpecification29"
+                LastKnownLocation="BricaChoc2.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="0614e44d-d6e4-41b0-9be5-8cdc0a8d1b6c"
+            name=": Produit"
+            isActor="false"
+            lifelineDisplayName=": Produit">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="bc4c2ea8-eea4-4bf4-a04c-173324ee7fae"
+                LastKnownName="ExecutionOccurrenceSpecification21"
+                LastKnownLocation="BricaChoc2.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="d686eb61-be0c-44c4-a500-469f987eb849"
+                LastKnownName="ExecutionOccurrenceSpecification22"
+                LastKnownLocation="BricaChoc2.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="b0914f63-4e2f-4844-8510-a4dfe955cb24"
+            name="AfficherCatalogue()"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="0fef669b-dcaf-4f3c-bfe1-8ef3e42d7ce6"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="BricaChoc2.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="acd1cd44-e45c-4506-8b8a-caaa1a60165f"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="BricaChoc2.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="9a1c18e5-85a7-4f08-ad0a-5b3ef74e3eec"
+            name="GetCatalogue()"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="afae1889-d8c6-4e2b-822d-9b0e1ab516e8"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="BricaChoc2.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="a67e0dc8-f472-45b9-8bdb-0c3f4225e4b5"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="BricaChoc2.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="16795e8e-f54b-4612-a503-95675028d8bf"
+            name="CreerProduit()"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="17d75266-738b-476b-8f59-2513b9e2fb86"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="BricaChoc2.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="1a9d1d75-edfa-4243-a6d4-19c09c9bd1be"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="BricaChoc2.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="cadb99cb-60dc-47db-80d4-bee63230acca"
+            name="CreerProduit()"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="04df7839-b506-4260-a839-7d2471236a13"
+                LastKnownName="MessageOccurrenceSpecification23"
+                LastKnownLocation="BricaChoc2.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="0d581300-8313-451c-9b97-94b82c450b66"
+                LastKnownName="MessageOccurrenceSpecification24"
+                LastKnownLocation="BricaChoc2.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="d1da0fe8-6844-4cab-b9c6-632f32dae93c"
+            name="&lt;&lt;create&gt;&gt;"
+            messageKind="Complete"
+            messageSort="CreateMessage"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="64acffc8-9a80-48a7-bf47-cc51eeef69f4"
+                LastKnownName="MessageOccurrenceSpecification25"
+                LastKnownLocation="BricaChoc2.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="611294ec-de89-4c7e-9121-cd49cb448b01"
+                LastKnownName="MessageOccurrenceSpecification26"
+                LastKnownLocation="BricaChoc2.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="eb78148a-cb9b-4111-81dd-a2a3112819f8"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="705e71e5-b904-4b89-8a17-c73d09acf79c"
+                LastKnownName="MessageOccurrenceSpecification27"
+                LastKnownLocation="BricaChoc2.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="8e585a96-c0da-4fe6-99fc-5c6929d3a8fd"
+                LastKnownName="MessageOccurrenceSpecification28"
+                LastKnownLocation="BricaChoc2.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="cd2b3e6c-c91a-42cf-9fb9-e205a3c09be6"
+            name="addProduit()"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="e0c79ecb-4716-442c-9059-f1dfc24b982f"
+                LastKnownName="MessageOccurrenceSpecification29"
+                LastKnownLocation="BricaChoc2.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="be9b4312-8eb4-480f-9843-8c8071745a51"
+                LastKnownName="MessageOccurrenceSpecification30"
+                LastKnownLocation="BricaChoc2.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+        <ownedAttributesInternal>
+          <property
+            Id="81f64927-cbde-41d5-8d8e-c186563d9e73"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="25c6c055-a16f-408f-8c47-8f65063112d7"
+                LastKnownName="Manager"
+                LastKnownLocation="BricaChoc2.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="42c2f2f4-545d-4ab5-95df-9a782f912d4f"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="48e56298-843e-460f-8851-98d1b0435a48"
+                LastKnownName="Catalogue"
+                LastKnownLocation="BricaChoc2.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c89c14fd-abbc-401c-bfb2-6481b48da579"
+        name="Lifeline1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="60e38873-878c-4aab-9912-1fa310a885b7"
+        name="VenteEnCours"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="a593a278-bd62-4acd-a277-3e2e6d9e0f0a"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="103a89e1-42f3-46a4-84f1-b795f40895ee"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="a6d4db4a-7ea0-4479-8d9e-356e5d646e2c"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="de9ae0b2-d067-4947-9f0c-cf173c613192"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="55312f12-cb96-4064-b0b4-b4c23199b870"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="9123ab42-3ac1-424a-a8af-1c3c5ebcf35e"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="ba572064-26cb-4adf-ac6e-9301a3c3e8ec"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="eb91b73a-b9d8-42f3-adf4-80c43aac5a53"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="2b166249-e930-4ca3-950c-e6242a0632ef"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="acdf7e55-ac6f-4755-8416-8735b20d715c"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="4e5b544f-8d1e-4ea2-a18d-55cadb7a9607"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="8eb65e06-e50d-4c7e-9279-cf1baee0a359"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
