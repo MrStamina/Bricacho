@@ -43,13 +43,13 @@ public  class Catalogue
         }
 
        
-        public void afficherCatalogue()
-        {      
-            foreach (Produit prod in lesProduits)
-            {
-                Console.WriteLine(prod);
-            }
-        }
+        //public void afficherCatalogue()
+        //{      
+        //    foreach (Produit prod in lesProduits)
+        //    {
+        //        Console.WriteLine(prod);
+        //    }
+        //}
 
         public void delProduit(Produit prod)
         {
