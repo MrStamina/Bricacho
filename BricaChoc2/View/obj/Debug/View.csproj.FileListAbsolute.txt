@@ -7,3 +7,12 @@ C:\Users\Cdi07\Desktop\BricaChoc2\View\bin\Debug\BusinessObject.pdb
 C:\Users\Cdi07\Desktop\BricaChoc2\View\obj\Debug\View.csprojResolveAssemblyReference.cache
 C:\Users\Cdi07\Desktop\BricaChoc2\View\obj\Debug\View.dll
 C:\Users\Cdi07\Desktop\BricaChoc2\View\obj\Debug\View.pdb
+C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\View\bin\Debug\View.dll
+C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\View\bin\Debug\View.pdb
+C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\View\bin\Debug\BLL.dll
+C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\View\bin\Debug\BusinessObject.dll
+C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\View\bin\Debug\BLL.pdb
+C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\View\bin\Debug\BusinessObject.pdb
+C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\View\obj\Debug\View.csprojResolveAssemblyReference.cache
+C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\View\obj\Debug\View.dll
+C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\View\obj\Debug\View.pdb

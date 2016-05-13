@@ -5,3 +5,6 @@ C:\Users\Cdi07\Desktop\BricaChoc2\DAL\bin\Debug\BusinessObject.pdb
 C:\Users\Cdi07\Desktop\BricaChoc2\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 C:\Users\Cdi07\Desktop\BricaChoc2\DAL\obj\Debug\DAL.dll
 C:\Users\Cdi07\Desktop\BricaChoc2\DAL\obj\Debug\DAL.pdb
+C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\DAL\obj\Debug\DAL.dll
+C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\DAL\obj\Debug\DAL.pdb

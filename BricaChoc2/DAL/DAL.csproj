@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -41,6 +42,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CatalogueDAL.cs" />
+    <Compile Include="Connection.cs" />
+    <Compile Include="Exceptions\DaoException.cs" />
+    <Compile Include="Exceptions\DaoExceptionAfficheMessage.cs" />
+    <Compile Include="Exceptions\DaoExceptionFinAppli.cs" />
     <Compile Include="ProduitDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

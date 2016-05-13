@@ -13,3 +13,12 @@ C:\Users\Cdi07\Desktop\BricaChoc2\IHM_Catalogue\obj\Debug\IHM_Catalogue.Form_Pro
 C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\IHM_Catalogue\bin\Debug\IHM_Catalogue.exe.config
 C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\IHM_Catalogue\obj\Debug\IHM_Catalogue.exe
 C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\IHM_Catalogue\obj\Debug\IHM_Catalogue.pdb
+C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\IHM_Catalogue\bin\Debug\IHM_Catalogue.exe
+C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\IHM_Catalogue\bin\Debug\IHM_Catalogue.pdb
+C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\IHM_Catalogue\bin\Debug\BusinessObject.dll
+C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\IHM_Catalogue\bin\Debug\BusinessObject.pdb
+C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\IHM_Catalogue\obj\Debug\IHM_Catalogue.csprojResolveAssemblyReference.cache
+C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\IHM_Catalogue\obj\Debug\IHM_Catalogue.Form_Catalogue.resources
+C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\IHM_Catalogue\obj\Debug\IHM_Catalogue.Form_Produit.resources
+C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\IHM_Catalogue\obj\Debug\IHM_Catalogue.Properties.Resources.resources
+C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\IHM_Catalogue\obj\Debug\IHM_Catalogue.csproj.GenerateResource.Cache
