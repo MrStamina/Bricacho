@@ -16,7 +16,7 @@ namespace IHM_Catalogue
         public Form_Catalogue()
         {
             InitializeComponent();
-            cat.exempleProd();
+           
 
         }
 

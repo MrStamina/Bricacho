@@ -7,3 +7,4 @@ C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\BusinessObject\bin\Debug\Busi
 C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\BusinessObject\bin\Debug\BusinessObject.pdb
 C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\BusinessObject\obj\Debug\BusinessObject.dll
 C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\BusinessObject\obj\Debug\BusinessObject.pdb
+C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\BusinessObject\obj\Debug\BusinessObject.csprojResolveAssemblyReference.cache

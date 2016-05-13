@@ -34,13 +34,13 @@ public  class Catalogue
            
         }
         
-        public void exempleProd()
-        {
-            FabriqueProduit fabprod = new FabriqueProduit();
-            addProduit(fabprod.CreerProduit(125789, "Camembert", "portion 250g", 1.78, 152));
-            addProduit(fabprod.CreerProduit(125788, "Comté", "portion 250g", 3.78, 52));
-            addProduit(fabprod.CreerProduit(125787, "Roquefort", "portion 250g", 2.8, 72));
-        }
+        //public void exempleProd()
+        //{
+        //    FabriqueProduit fabprod = new FabriqueProduit();
+        //    addProduit(fabprod.CreerProduit(125789, "Camembert", "portion 250g", 1.78, 152));
+        //    addProduit(fabprod.CreerProduit(125788, "Comté", "portion 250g", 3.78, 52));
+        //    addProduit(fabprod.CreerProduit(125787, "Roquefort", "portion 250g", 2.8, 72));
+        //}
 
        
         //public void afficherCatalogue()

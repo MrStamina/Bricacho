@@ -6,15 +6,16 @@ using System.Threading.Tasks;
 
 public  class Produit
     {
+        public int IdProduit { get; set; }
         public int Cpu { get; set; }
         public string Nom_Produit { get; set; }
 
-        //public Categorie_Produit Categorie { get; set; }
-        public string Description { get; set; }
+         public Categorie_Produit Categorie { get; set; }
+          public string Description { get; set; }
 
         public double Prix_Unitaire { get; set; }
 
-        public int Quantite { get; set; }
+        //public int Quantite { get; set; }
 
 
 
@@ -23,15 +24,15 @@ public  class Produit
 
         }
 
-        public Produit(int cpu, string nom,/* Categorie_Produit cat,*/ string des,double pu,int qte)
+        public Produit(int id,int cpu, string nom, Categorie_Produit cat, string des,double pu)
         {
-            
+            this.IdProduit = id;
             this.Cpu = cpu;
             this.Nom_Produit = nom;
-        //this.Categorie = cat;
+            this.Categorie = cat;
             this.Description = des;
             this.Prix_Unitaire = pu;
-            this.Quantite = qte;
+            
 
         }
 
