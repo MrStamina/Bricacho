@@ -3,41 +3,34 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data;
 using System.Data.Common;
 using DAL.Exceptions;
 
 namespace DAL
 {
-    public class CatalogueDAL
+   public class Categorie_ProduitDAL
     {
-        public  Catalogue  GetAllProduits()
+        public List<Categorie_Produit> GetAllCategorie()
         {
-            Catalogue cat = new Catalogue();
             using (DbConnection oConnection = Connection.GetConnectionMySQL())
             {
                 using (DbCommand oCommand = oConnection.CreateCommand())
                 {
-                    oCommand.CommandText = "SELECT * FROM bricachoc.produit";
-
+                    oCommand.CommandText = "SELECT * FROM bricachoc.categorie_produit";
                     try
                     {
                         DbDataReader dbRdr = oCommand.ExecuteReader();
-                        while (dbRdr.Read())
+                        List<Categorie_Produit> listCatProd = new List<Categorie_Produit>();
+                        while(dbRdr.Read())
                         {
-                            int id = dbRdr.GetInt32(0);
-                            int cpu = dbRdr.GetInt32(1);
-                            string nom = dbRdr.GetString(2);
-                            string des = (!dbRdr.IsDBNull(4)) ? dbRdr.GetString(4) : string.Empty;
-                            double pu = dbRdr.GetDouble(5);
-                            Categorie_Produit catProd = new Categorie_Produit() { Id_Categorie = dbRdr.GetInt32(3) };
-
-                            Produit prod = new Produit(id, cpu,nom,catProd,des,pu);
-                            cat.LesProduits.Add(prod); 
-
+                            
+                            int idCat = dbRdr.GetInt32(0);
+                            string libelleCat = dbRdr.GetString(1);
+                            Categorie_Produit catprod = new Categorie_Produit(idCat,libelleCat);
+                            listCatProd.Add(catprod);
                         }
                         dbRdr.Close();
-                        return cat;
+                        return listCatProd;
                     }
                     catch (DbException de)
                     {
@@ -46,7 +39,9 @@ namespace DAL
                     }
                 }
             }
-            
+                
+           
+       
         }
     }
 }

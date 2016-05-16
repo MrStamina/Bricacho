@@ -41,7 +41,7 @@ namespace DAL
 
         static public DbConnection GetConnectionMySQL()
         {
-            ConnectionStringSettings oConfig = ConfigurationManager.ConnectionStrings["ConBricachocMySQL"];
+            ConnectionStringSettings oConfig = ConfigurationManager.ConnectionStrings["IHM_Catalogue.Properties.Settings.ConMySql"];
             if (oConfig == null)
                 throw new DaoExceptionFinAppli("La base est inaccessible, l'application va se fermer, veuillez recommencez ultèrieurement: \n" + "La chaine de connexion est introuvable");
             else

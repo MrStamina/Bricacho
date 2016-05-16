@@ -32,16 +32,19 @@
             this.buttonCreateProduit = new System.Windows.Forms.Button();
             this.buttonDisplayCat = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.catalogueBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lesProduitsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.categorieProduitBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.catalogueBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.idProduitDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cpuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomProduitDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categorieDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.prixUnitaireDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quantiteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.catalogueBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lesProduitsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categorieProduitBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.catalogueBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonCreateProduit
@@ -66,73 +69,99 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idProduitDataGridViewTextBoxColumn,
             this.cpuDataGridViewTextBoxColumn,
             this.nomProduitDataGridViewTextBoxColumn,
+            this.categorieDataGridViewTextBoxColumn,
             this.descriptionDataGridViewTextBoxColumn,
-            this.prixUnitaireDataGridViewTextBoxColumn,
-            this.quantiteDataGridViewTextBoxColumn});
+            this.prixUnitaireDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.lesProduitsBindingSource;
-            this.dataGridView1.Enabled = false;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 149);
+            this.dataGridView1.Location = new System.Drawing.Point(-4, 172);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(546, 173);
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(640, 173);
             this.dataGridView1.TabIndex = 3;
-            // 
-            // catalogueBindingSource
-            // 
-            this.catalogueBindingSource.DataSource = typeof(Catalogue);
+            this.dataGridView1.Visible = false;
             // 
             // lesProduitsBindingSource
             // 
             this.lesProduitsBindingSource.DataMember = "LesProduits";
             this.lesProduitsBindingSource.DataSource = this.catalogueBindingSource;
             // 
+            // categorieProduitBindingSource
+            // 
+            this.categorieProduitBindingSource.DataSource = typeof(Categorie_Produit);
+            // 
+            // catalogueBindingSource
+            // 
+            this.catalogueBindingSource.DataSource = typeof(Catalogue);
+            // 
+            // idProduitDataGridViewTextBoxColumn
+            // 
+            this.idProduitDataGridViewTextBoxColumn.DataPropertyName = "IdProduit";
+            this.idProduitDataGridViewTextBoxColumn.HeaderText = "IdProduit";
+            this.idProduitDataGridViewTextBoxColumn.Name = "idProduitDataGridViewTextBoxColumn";
+            this.idProduitDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
             // cpuDataGridViewTextBoxColumn
             // 
             this.cpuDataGridViewTextBoxColumn.DataPropertyName = "Cpu";
             this.cpuDataGridViewTextBoxColumn.HeaderText = "Cpu";
             this.cpuDataGridViewTextBoxColumn.Name = "cpuDataGridViewTextBoxColumn";
+            this.cpuDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // nomProduitDataGridViewTextBoxColumn
             // 
             this.nomProduitDataGridViewTextBoxColumn.DataPropertyName = "Nom_Produit";
             this.nomProduitDataGridViewTextBoxColumn.HeaderText = "Nom_Produit";
             this.nomProduitDataGridViewTextBoxColumn.Name = "nomProduitDataGridViewTextBoxColumn";
+            this.nomProduitDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // categorieDataGridViewTextBoxColumn
+            // 
+            this.categorieDataGridViewTextBoxColumn.DataPropertyName = "Categorie";
+            this.categorieDataGridViewTextBoxColumn.DataSource = this.categorieProduitBindingSource;
+            this.categorieDataGridViewTextBoxColumn.DisplayMember = "Nom_Categorie";
+            this.categorieDataGridViewTextBoxColumn.HeaderText = "Categorie";
+            this.categorieDataGridViewTextBoxColumn.Name = "categorieDataGridViewTextBoxColumn";
+            this.categorieDataGridViewTextBoxColumn.ReadOnly = true;
+            this.categorieDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.categorieDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.categorieDataGridViewTextBoxColumn.ValueMember = "Self";
             // 
             // descriptionDataGridViewTextBoxColumn
             // 
             this.descriptionDataGridViewTextBoxColumn.DataPropertyName = "Description";
             this.descriptionDataGridViewTextBoxColumn.HeaderText = "Description";
             this.descriptionDataGridViewTextBoxColumn.Name = "descriptionDataGridViewTextBoxColumn";
+            this.descriptionDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // prixUnitaireDataGridViewTextBoxColumn
             // 
             this.prixUnitaireDataGridViewTextBoxColumn.DataPropertyName = "Prix_Unitaire";
             this.prixUnitaireDataGridViewTextBoxColumn.HeaderText = "Prix_Unitaire";
             this.prixUnitaireDataGridViewTextBoxColumn.Name = "prixUnitaireDataGridViewTextBoxColumn";
-            // 
-            // quantiteDataGridViewTextBoxColumn
-            // 
-            this.quantiteDataGridViewTextBoxColumn.DataPropertyName = "Quantite";
-            this.quantiteDataGridViewTextBoxColumn.HeaderText = "Quantite";
-            this.quantiteDataGridViewTextBoxColumn.Name = "quantiteDataGridViewTextBoxColumn";
+            this.prixUnitaireDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // Form_Catalogue
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(558, 379);
+            this.ClientSize = new System.Drawing.Size(636, 379);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.buttonDisplayCat);
             this.Controls.Add(this.buttonCreateProduit);
             this.Name = "Form_Catalogue";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.catalogueBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lesProduitsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categorieProduitBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.catalogueBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -142,13 +171,16 @@
         private System.Windows.Forms.Button buttonCreateProduit;
         private System.Windows.Forms.Button buttonDisplayCat;
         private System.Windows.Forms.DataGridView dataGridView1;
+     
+        private System.Windows.Forms.BindingSource lesProduitsBindingSource;
         private System.Windows.Forms.BindingSource catalogueBindingSource;
+        private System.Windows.Forms.BindingSource categorieProduitBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idProduitDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cpuDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomProduitDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewComboBoxColumn categorieDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn descriptionDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn prixUnitaireDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn quantiteDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource lesProduitsBindingSource;
     }
 }
 

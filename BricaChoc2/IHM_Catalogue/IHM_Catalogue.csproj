@@ -58,6 +58,12 @@
     <Compile Include="Form_Produit.Designer.cs">
       <DependentUpon>Form_Produit.cs</DependentUpon>
     </Compile>
+    <Compile Include="GenerateBarcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerateBarcode.Designer.cs">
+      <DependentUpon>GenerateBarcode.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form_Catalogue.resx">
@@ -65,6 +71,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Produit.resx">
       <DependentUpon>Form_Produit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerateBarcode.resx">
+      <DependentUpon>GenerateBarcode.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -76,7 +85,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Fonts\IDAutomationHC39M.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <None Include="Properties\DataSources\Catalogue.datasource" />
+    <None Include="Properties\DataSources\Categorie_Produit.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -91,6 +104,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{4b9c8d11-6a4e-4db6-a526-82bc9b65e214}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BusinessObject\BusinessObject.csproj">
       <Project>{0f99d29c-4df9-4d3b-bc88-cde3deb18bba}</Project>
       <Name>BusinessObject</Name>

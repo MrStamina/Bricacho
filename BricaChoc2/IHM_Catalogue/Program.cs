@@ -16,7 +16,7 @@ namespace IHM_Catalogue
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form_Catalogue());
+            Application.Run(new GenerateBarcode());
             
         }
     }

@@ -14,3 +14,11 @@ C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\ConsoleApplicationTest\bin\De
 C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\ConsoleApplicationTest\obj\Debug\ConsoleApplicationTest.csprojResolveAssemblyReference.cache
 C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\ConsoleApplicationTest\obj\Debug\ConsoleApplicationTest.exe
 C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\ConsoleApplicationTest\obj\Debug\ConsoleApplicationTest.pdb
+C:\Users\Lucas\Desktop\GitHub\Bricachoc\BricaChoc2\ConsoleApplicationTest\bin\Debug\ConsoleApplicationTest.exe.config
+C:\Users\Lucas\Desktop\GitHub\Bricachoc\BricaChoc2\ConsoleApplicationTest\bin\Debug\ConsoleApplicationTest.exe
+C:\Users\Lucas\Desktop\GitHub\Bricachoc\BricaChoc2\ConsoleApplicationTest\bin\Debug\ConsoleApplicationTest.pdb
+C:\Users\Lucas\Desktop\GitHub\Bricachoc\BricaChoc2\ConsoleApplicationTest\bin\Debug\BusinessObject.dll
+C:\Users\Lucas\Desktop\GitHub\Bricachoc\BricaChoc2\ConsoleApplicationTest\bin\Debug\BusinessObject.pdb
+C:\Users\Lucas\Desktop\GitHub\Bricachoc\BricaChoc2\ConsoleApplicationTest\obj\Debug\ConsoleApplicationTest.csprojResolveAssemblyReference.cache
+C:\Users\Lucas\Desktop\GitHub\Bricachoc\BricaChoc2\ConsoleApplicationTest\obj\Debug\ConsoleApplicationTest.exe
+C:\Users\Lucas\Desktop\GitHub\Bricachoc\BricaChoc2\ConsoleApplicationTest\obj\Debug\ConsoleApplicationTest.pdb

@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CatalogueDAL.cs" />
+    <Compile Include="Categorie_ProduitDAL.cs" />
     <Compile Include="Connection.cs" />
     <Compile Include="Exceptions\DaoException.cs" />
     <Compile Include="Exceptions\DaoExceptionAfficheMessage.cs" />

@@ -26,11 +26,11 @@ namespace IHM_Catalogue
         private void buttonValider_Click(object sender, EventArgs e)
         {
             
-            Random randCpu = new Random();
-            FabriqueProduit fabProd = new FabriqueProduit();
+            //Random randCpu = new Random();
+            //FabriqueProduit fabProd = new FabriqueProduit();
 
-            cata.addProduit(fabProd.CreerProduit(randCpu.Next(99), textBoxNomProd.Text, textBoxDescription_Prod.Text, Convert.ToDouble(textBoxPrix_Unitaire.Text), Convert.ToInt32(numericUpDownQuantite.Value)));
-            this.Close();            
+            //cata.addProduit(fabProd.CreerProduit(randCpu.Next(99), textBoxNomProd.Text, textBoxDescription_Prod.Text, Convert.ToDouble(textBoxPrix_Unitaire.Text), Convert.ToInt32(numericUpDownQuantite.Value)));
+            //this.Close();            
         }
     }
 }

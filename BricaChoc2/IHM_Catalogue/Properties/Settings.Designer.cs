@@ -28,9 +28,19 @@ namespace IHM_Catalogue.Properties {
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("server=localhost;user id=root;password=Crbls2016;persistsecurityinfo=True;databas" +
             "e=bricachoc")]
-        public string ConMySQL {
+        public string ConMySql {
             get {
-                return ((string)(this["ConMySQL"]));
+                return ((string)(this["ConMySql"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(local);Initial Catalog=Bricachoc;Integrated Security=True")]
+        public string ConSql {
+            get {
+                return ((string)(this["ConSql"]));
             }
         }
     }

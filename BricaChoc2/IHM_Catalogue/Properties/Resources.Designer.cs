@@ -59,5 +59,15 @@ namespace IHM_Catalogue.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Byte[].
+        /// </summary>
+        internal static byte[] IDAutomationHC39M {
+            get {
+                object obj = ResourceManager.GetObject("IDAutomationHC39M", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
     }
 }
