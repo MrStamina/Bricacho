@@ -17,8 +17,8 @@ namespace IHM_Catalogue
 {
     public partial class GenerateBarcode : Form
     {
-        [DllImport("gdi32.dll")]
-        private static extern IntPtr AddFontMemResourceEx(IntPtr pbFont, uint cbFont, IntPtr pdv, [In] ref uint pcFonts);
+        //[DllImport("gdi32.dll")]
+        //private static extern IntPtr AddFontMemResourceEx(IntPtr pbFont, uint cbFont, IntPtr pdv, [In] ref uint pcFonts);
         public GenerateBarcode()
         {
             InitializeComponent();

@@ -27,3 +27,5 @@ C:\Users\Lucas\Desktop\GitHub\Bricachoc\BricaChoc2\View\bin\Debug\DAL.pdb
 C:\Users\Lucas\Desktop\GitHub\Bricachoc\BricaChoc2\View\obj\Debug\View.csprojResolveAssemblyReference.cache
 C:\Users\Lucas\Desktop\GitHub\Bricachoc\BricaChoc2\View\obj\Debug\View.dll
 C:\Users\Lucas\Desktop\GitHub\Bricachoc\BricaChoc2\View\obj\Debug\View.pdb
+C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\View\bin\Debug\DAL.dll
+C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\View\bin\Debug\DAL.pdb

@@ -16,7 +16,7 @@ namespace DAL
             {
                 using (DbCommand oCommand = oConnection.CreateCommand())
                 {
-                    oCommand.CommandText = "SELECT * FROM bricachoc.categorie_produit";
+                    oCommand.CommandText = "SELECT * FROM bricachoc.categorieproduit";
                     try
                     {
                         DbDataReader dbRdr = oCommand.ExecuteReader();

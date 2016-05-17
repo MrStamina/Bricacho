@@ -40,3 +40,9 @@ C:\Users\Lucas\Desktop\GitHub\Bricachoc\BricaChoc2\IHM_Catalogue\obj\Debug\IHM_C
 C:\Users\Lucas\Desktop\GitHub\Bricachoc\BricaChoc2\IHM_Catalogue\obj\Debug\IHM_Catalogue.pdb
 C:\Users\Lucas\Desktop\GitHub\Bricachoc\BricaChoc2\IHM_Catalogue\obj\Debug\IHM_Catalogue.GenerateBarcode.resources
 C:\Users\Lucas\Desktop\GitHub\Bricachoc\BricaChoc2\IHM_Catalogue\bin\Debug\Fonts\IDAutomationHC39M.ttf
+C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\IHM_Catalogue\bin\Debug\Fonts\IDAutomationHC39M.ttf
+C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\IHM_Catalogue\bin\Debug\BLL.dll
+C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\IHM_Catalogue\bin\Debug\DAL.dll
+C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\IHM_Catalogue\bin\Debug\BLL.pdb
+C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\IHM_Catalogue\bin\Debug\DAL.pdb
+C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\IHM_Catalogue\obj\Debug\IHM_Catalogue.GenerateBarcode.resources

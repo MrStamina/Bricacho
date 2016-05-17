@@ -28,20 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.buttonValider = new System.Windows.Forms.Button();
             this.buttonModifier = new System.Windows.Forms.Button();
-            this.buttonSupprimer = new System.Windows.Forms.Button();
+            this.buttonCreer = new System.Windows.Forms.Button();
             this.textBoxNomProd = new System.Windows.Forms.TextBox();
             this.comboBoxCatProd = new System.Windows.Forms.ComboBox();
             this.textBoxDescription_Prod = new System.Windows.Forms.TextBox();
             this.textBoxPrix_Unitaire = new System.Windows.Forms.TextBox();
-            this.numericUpDownQuantite = new System.Windows.Forms.NumericUpDown();
             this.labelNom_Prod = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownQuantite)).BeginInit();
+            this.categorieProduitBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.textBoxCpu = new System.Windows.Forms.TextBox();
+            this.labelCpu = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.categorieProduitBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonValider
@@ -63,18 +65,19 @@
             this.buttonModifier.Text = "Modifier";
             this.buttonModifier.UseVisualStyleBackColor = true;
             // 
-            // buttonSupprimer
+            // buttonCreer
             // 
-            this.buttonSupprimer.Location = new System.Drawing.Point(274, 208);
-            this.buttonSupprimer.Name = "buttonSupprimer";
-            this.buttonSupprimer.Size = new System.Drawing.Size(75, 23);
-            this.buttonSupprimer.TabIndex = 2;
-            this.buttonSupprimer.Text = "Supprimer";
-            this.buttonSupprimer.UseVisualStyleBackColor = true;
+            this.buttonCreer.Location = new System.Drawing.Point(274, 208);
+            this.buttonCreer.Name = "buttonCreer";
+            this.buttonCreer.Size = new System.Drawing.Size(100, 23);
+            this.buttonCreer.TabIndex = 2;
+            this.buttonCreer.Text = "Creer Code Barre";
+            this.buttonCreer.UseVisualStyleBackColor = true;
+            this.buttonCreer.Click += new System.EventHandler(this.buttonCreer_Click);
             // 
             // textBoxNomProd
             // 
-            this.textBoxNomProd.Location = new System.Drawing.Point(108, 42);
+            this.textBoxNomProd.Location = new System.Drawing.Point(108, 46);
             this.textBoxNomProd.MaxLength = 30;
             this.textBoxNomProd.Name = "textBoxNomProd";
             this.textBoxNomProd.Size = new System.Drawing.Size(121, 20);
@@ -82,15 +85,17 @@
             // 
             // comboBoxCatProd
             // 
+            this.comboBoxCatProd.DataSource = this.categorieProduitBindingSource;
+            this.comboBoxCatProd.DisplayMember = "Nom_Categorie";
             this.comboBoxCatProd.FormattingEnabled = true;
-            this.comboBoxCatProd.Location = new System.Drawing.Point(106, 91);
+            this.comboBoxCatProd.Location = new System.Drawing.Point(108, 159);
             this.comboBoxCatProd.Name = "comboBoxCatProd";
             this.comboBoxCatProd.Size = new System.Drawing.Size(121, 21);
             this.comboBoxCatProd.TabIndex = 4;
             // 
             // textBoxDescription_Prod
             // 
-            this.textBoxDescription_Prod.Location = new System.Drawing.Point(108, 139);
+            this.textBoxDescription_Prod.Location = new System.Drawing.Point(108, 213);
             this.textBoxDescription_Prod.MaxLength = 250;
             this.textBoxDescription_Prod.Multiline = true;
             this.textBoxDescription_Prod.Name = "textBoxDescription_Prod";
@@ -99,17 +104,10 @@
             // 
             // textBoxPrix_Unitaire
             // 
-            this.textBoxPrix_Unitaire.Location = new System.Drawing.Point(108, 229);
+            this.textBoxPrix_Unitaire.Location = new System.Drawing.Point(108, 309);
             this.textBoxPrix_Unitaire.Name = "textBoxPrix_Unitaire";
             this.textBoxPrix_Unitaire.Size = new System.Drawing.Size(121, 20);
             this.textBoxPrix_Unitaire.TabIndex = 6;
-            // 
-            // numericUpDownQuantite
-            // 
-            this.numericUpDownQuantite.Location = new System.Drawing.Point(108, 285);
-            this.numericUpDownQuantite.Name = "numericUpDownQuantite";
-            this.numericUpDownQuantite.Size = new System.Drawing.Size(121, 20);
-            this.numericUpDownQuantite.TabIndex = 7;
             // 
             // labelNom_Prod
             // 
@@ -123,7 +121,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 99);
+            this.label2.Location = new System.Drawing.Point(11, 162);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(88, 13);
             this.label2.TabIndex = 9;
@@ -132,7 +130,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 159);
+            this.label3.Location = new System.Drawing.Point(12, 245);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(60, 13);
             this.label3.TabIndex = 10;
@@ -141,42 +139,54 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(14, 236);
+            this.label4.Location = new System.Drawing.Point(11, 316);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(61, 13);
             this.label4.TabIndex = 11;
             this.label4.Text = "Prix unitaire";
             // 
-            // label5
+            // categorieProduitBindingSource
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(14, 292);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(47, 13);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "Quantité";
+            this.categorieProduitBindingSource.DataSource = typeof(Categorie_Produit);
+            // 
+            // textBoxCpu
+            // 
+            this.textBoxCpu.Location = new System.Drawing.Point(108, 98);
+            this.textBoxCpu.MaxLength = 30;
+            this.textBoxCpu.Name = "textBoxCpu";
+            this.textBoxCpu.Size = new System.Drawing.Size(121, 20);
+            this.textBoxCpu.TabIndex = 12;
+            // 
+            // labelCpu
+            // 
+            this.labelCpu.AutoSize = true;
+            this.labelCpu.Location = new System.Drawing.Point(13, 104);
+            this.labelCpu.Name = "labelCpu";
+            this.labelCpu.Size = new System.Drawing.Size(26, 13);
+            this.labelCpu.TabIndex = 13;
+            this.labelCpu.Text = "Cpu";
             // 
             // Form_Produit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(378, 418);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.labelCpu);
+            this.Controls.Add(this.textBoxCpu);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.labelNom_Prod);
-            this.Controls.Add(this.numericUpDownQuantite);
             this.Controls.Add(this.textBoxPrix_Unitaire);
             this.Controls.Add(this.textBoxDescription_Prod);
             this.Controls.Add(this.comboBoxCatProd);
             this.Controls.Add(this.textBoxNomProd);
-            this.Controls.Add(this.buttonSupprimer);
+            this.Controls.Add(this.buttonCreer);
             this.Controls.Add(this.buttonModifier);
             this.Controls.Add(this.buttonValider);
             this.Name = "Form_Produit";
             this.Text = "Form_Produit";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownQuantite)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categorieProduitBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -186,16 +196,17 @@
 
         private System.Windows.Forms.Button buttonValider;
         private System.Windows.Forms.Button buttonModifier;
-        private System.Windows.Forms.Button buttonSupprimer;
+        private System.Windows.Forms.Button buttonCreer;
         private System.Windows.Forms.TextBox textBoxNomProd;
         private System.Windows.Forms.ComboBox comboBoxCatProd;
         private System.Windows.Forms.TextBox textBoxDescription_Prod;
         private System.Windows.Forms.TextBox textBoxPrix_Unitaire;
-        private System.Windows.Forms.NumericUpDown numericUpDownQuantite;
         private System.Windows.Forms.Label labelNom_Prod;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.BindingSource categorieProduitBindingSource;
+        private System.Windows.Forms.TextBox textBoxCpu;
+        private System.Windows.Forms.Label labelCpu;
     }
 }

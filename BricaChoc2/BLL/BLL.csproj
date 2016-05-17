@@ -41,7 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CatalogueManager.cs" />
-    <Compile Include="ProduitBLL.cs" />
+    <Compile Include="ProduitManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

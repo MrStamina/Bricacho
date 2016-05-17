@@ -24,5 +24,10 @@ namespace BLL
             return listCatProd;
         }
 
+        public void RechercherProduit(int idProduit)
+        {
+
+        }
+
     }
 }

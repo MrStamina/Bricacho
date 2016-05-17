@@ -11,7 +11,7 @@ public  class Produit
         public string Nom_Produit { get; set; }
 
          public Categorie_Produit Categorie { get; set; }
-          public string Description { get; set; }
+        public string Description { get; set; }
 
         public double Prix_Unitaire { get; set; }
 

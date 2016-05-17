@@ -88,6 +88,7 @@
     <EmbeddedResource Include="Fonts\IDAutomationHC39M.ttf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <None Include="Fonts\ean13.ttf" />
     <None Include="Properties\DataSources\Catalogue.datasource" />
     <None Include="Properties\DataSources\Categorie_Produit.datasource" />
     <None Include="Properties\Settings.settings">
@@ -112,6 +113,13 @@
       <Project>{0f99d29c-4df9-4d3b-bc88-cde3deb18bba}</Project>
       <Name>BusinessObject</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{9000f586-ea36-4883-bb13-8397cd2a79aa}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

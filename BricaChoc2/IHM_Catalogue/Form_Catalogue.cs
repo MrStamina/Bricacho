@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL;
+using DAL.Exceptions;
+
 
 namespace IHM_Catalogue
 {
@@ -17,13 +19,7 @@ namespace IHM_Catalogue
        
         public Form_Catalogue()
         {
-            InitializeComponent();
-            catman = new CatalogueManager();
-           
-            lesProduitsBindingSource.DataSource = catman.ChargerCatalogue().LesProduits;
-            categorieProduitBindingSource.DataSource = catman.ChargerLesCategorie();
-
-           
+            initialisation();           
             
         }
 
@@ -35,8 +31,27 @@ namespace IHM_Catalogue
 
         private void buttonCreateProduit_Click(object sender, EventArgs e)
         {
-            //Form_Produit frmProd = new Form_Produit(cat);
-            //frmProd.Show();
+            Form_Produit frmProd = new Form_Produit(catman);
+            frmProd.Show();
+        }
+
+        private void initialisation()
+        {
+            InitializeComponent();
+            catman = new CatalogueManager();
+            try
+            {
+                lesProduitsBindingSource.DataSource = catman.ChargerCatalogue().LesProduits;
+                categorieProduitBindingSource.DataSource = catman.ChargerLesCategorie();
+            }
+            catch (DaoExceptionAfficheMessage deaf)
+            {
+                MessageBox.Show(deaf.Message);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

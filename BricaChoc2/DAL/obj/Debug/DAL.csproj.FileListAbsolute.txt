@@ -15,3 +15,7 @@ C:\Users\Lucas\Desktop\GitHub\Bricachoc\BricaChoc2\DAL\bin\Debug\BusinessObject.
 C:\Users\Lucas\Desktop\GitHub\Bricachoc\BricaChoc2\DAL\bin\Debug\BusinessObject.pdb
 C:\Users\Lucas\Desktop\GitHub\Bricachoc\BricaChoc2\DAL\obj\Debug\DAL.dll
 C:\Users\Lucas\Desktop\GitHub\Bricachoc\BricaChoc2\DAL\obj\Debug\DAL.pdb
+C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\DAL\bin\Debug\DAL.dll
+C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\DAL\bin\Debug\DAL.pdb
+C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\DAL\bin\Debug\BusinessObject.dll
+C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\DAL\bin\Debug\BusinessObject.pdb

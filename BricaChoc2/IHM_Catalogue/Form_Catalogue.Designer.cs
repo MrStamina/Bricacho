@@ -32,8 +32,8 @@
             this.buttonCreateProduit = new System.Windows.Forms.Button();
             this.buttonDisplayCat = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.lesProduitsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.categorieProduitBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.lesProduitsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.catalogueBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.idProduitDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cpuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,9 +41,11 @@
             this.categorieDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.prixUnitaireDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Modifier = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Supprimer = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lesProduitsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.categorieProduitBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lesProduitsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.catalogueBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,7 +81,9 @@
             this.nomProduitDataGridViewTextBoxColumn,
             this.categorieDataGridViewTextBoxColumn,
             this.descriptionDataGridViewTextBoxColumn,
-            this.prixUnitaireDataGridViewTextBoxColumn});
+            this.prixUnitaireDataGridViewTextBoxColumn,
+            this.Modifier,
+            this.Supprimer});
             this.dataGridView1.DataSource = this.lesProduitsBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(-4, 172);
             this.dataGridView1.Name = "dataGridView1";
@@ -88,14 +92,14 @@
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.Visible = false;
             // 
+            // categorieProduitBindingSource
+            // 
+            this.categorieProduitBindingSource.DataSource = typeof(Categorie_Produit);
+            // 
             // lesProduitsBindingSource
             // 
             this.lesProduitsBindingSource.DataMember = "LesProduits";
             this.lesProduitsBindingSource.DataSource = this.catalogueBindingSource;
-            // 
-            // categorieProduitBindingSource
-            // 
-            this.categorieProduitBindingSource.DataSource = typeof(Categorie_Produit);
             // 
             // catalogueBindingSource
             // 
@@ -107,6 +111,7 @@
             this.idProduitDataGridViewTextBoxColumn.HeaderText = "IdProduit";
             this.idProduitDataGridViewTextBoxColumn.Name = "idProduitDataGridViewTextBoxColumn";
             this.idProduitDataGridViewTextBoxColumn.ReadOnly = true;
+            this.idProduitDataGridViewTextBoxColumn.Width = 50;
             // 
             // cpuDataGridViewTextBoxColumn
             // 
@@ -114,6 +119,7 @@
             this.cpuDataGridViewTextBoxColumn.HeaderText = "Cpu";
             this.cpuDataGridViewTextBoxColumn.Name = "cpuDataGridViewTextBoxColumn";
             this.cpuDataGridViewTextBoxColumn.ReadOnly = true;
+            this.cpuDataGridViewTextBoxColumn.Width = 50;
             // 
             // nomProduitDataGridViewTextBoxColumn
             // 
@@ -144,9 +150,22 @@
             // prixUnitaireDataGridViewTextBoxColumn
             // 
             this.prixUnitaireDataGridViewTextBoxColumn.DataPropertyName = "Prix_Unitaire";
-            this.prixUnitaireDataGridViewTextBoxColumn.HeaderText = "Prix_Unitaire";
+            this.prixUnitaireDataGridViewTextBoxColumn.HeaderText = "Prix";
             this.prixUnitaireDataGridViewTextBoxColumn.Name = "prixUnitaireDataGridViewTextBoxColumn";
             this.prixUnitaireDataGridViewTextBoxColumn.ReadOnly = true;
+            this.prixUnitaireDataGridViewTextBoxColumn.Width = 50;
+            // 
+            // Modifier
+            // 
+            this.Modifier.HeaderText = "Modifier";
+            this.Modifier.Name = "Modifier";
+            this.Modifier.ReadOnly = true;
+            // 
+            // Supprimer
+            // 
+            this.Supprimer.HeaderText = "Supprimer";
+            this.Supprimer.Name = "Supprimer";
+            this.Supprimer.ReadOnly = true;
             // 
             // Form_Catalogue
             // 
@@ -159,8 +178,8 @@
             this.Name = "Form_Catalogue";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lesProduitsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.categorieProduitBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lesProduitsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.catalogueBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -181,6 +200,8 @@
         private System.Windows.Forms.DataGridViewComboBoxColumn categorieDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn descriptionDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn prixUnitaireDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewButtonColumn Modifier;
+        private System.Windows.Forms.DataGridViewButtonColumn Supprimer;
     }
 }
 

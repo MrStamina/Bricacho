@@ -28,9 +28,9 @@ namespace DAL
                             int id = dbRdr.GetInt32(0);
                             int cpu = dbRdr.GetInt32(1);
                             string nom = dbRdr.GetString(2);
-                            string des = (!dbRdr.IsDBNull(4)) ? dbRdr.GetString(4) : string.Empty;
-                            double pu = dbRdr.GetDouble(5);
-                            Categorie_Produit catProd = new Categorie_Produit() { Id_Categorie = dbRdr.GetInt32(3) };
+                            string des = (!dbRdr.IsDBNull(3)) ? dbRdr.GetString(3) : string.Empty;
+                            double pu = dbRdr.GetDouble(4);
+                            Categorie_Produit catProd = new Categorie_Produit() { Id_Categorie = dbRdr.GetInt32(5) };
 
                             Produit prod = new Produit(id, cpu,nom,catProd,des,pu);
                             cat.LesProduits.Add(prod); 

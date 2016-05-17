@@ -8,12 +8,12 @@ using DAL;
 
 namespace BLL
 {
-    public class ProduitBLL
+    public class ProduitManager
     {
-        public void addCatalogue(Produit prod)
+        public int AddProduit(Produit prod) 
         {
-            Catalogue cat = new Catalogue();
-            cat.LesProduits.Add(prod);
+            ProduitDAL prodDal = new ProduitDAL();
+            return prodDal.AddProduit(prod);
         }
 
         public void updateProduit(Produit prod)
@@ -25,5 +25,6 @@ namespace BLL
         {
 
         }
+
     }
 }
