@@ -17,11 +17,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessObject", "BusinessO
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{4B9C8D11-6A4E-4DB6-A526-82BC9B65E214}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6C39B041-B4B8-46F2-B74F-5101E5102F8A}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\Barcode\IDAutomationHC39M Code 39 Barcode.ttf = ..\..\..\Barcode\IDAutomationHC39M Code 39 Barcode.ttf
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

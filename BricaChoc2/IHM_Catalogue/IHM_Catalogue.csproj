@@ -58,6 +58,12 @@
     <Compile Include="Form_Produit.Designer.cs">
       <DependentUpon>Form_Produit.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAccueil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAccueil.Designer.cs">
+      <DependentUpon>frmAccueil.cs</DependentUpon>
+    </Compile>
     <Compile Include="GenerateBarcode.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +77,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Produit.resx">
       <DependentUpon>Form_Produit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAccueil.resx">
+      <DependentUpon>frmAccueil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GenerateBarcode.resx">
       <DependentUpon>GenerateBarcode.cs</DependentUpon>

@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
     public class FabriqueProduit 
     {
-        public Produit CreerProduit(int id,int cpu, Categorie_Produit cat, string nom, string desc, double pu)
+        public Produit CreerProduit(int cpu, Categorie_Produit cat, string nom, string desc, double pu)
         {
-            return new Produit( id, cpu,  nom, cat, desc, pu);
+            return new Produit(  cpu,  nom, cat, desc, pu);
         }
     }
 

@@ -56,6 +56,11 @@
       <Name>BusinessObject</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Stored Procedure\add_produit.sql" />
+    <Content Include="Stored Procedure\del_produit.sql" />
+    <Content Include="Stored Procedure\upd_produit.sql" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

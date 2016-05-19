@@ -46,3 +46,4 @@ C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\IHM_Catalogue\bin\Debug\DAL.d
 C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\IHM_Catalogue\bin\Debug\BLL.pdb
 C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\IHM_Catalogue\bin\Debug\DAL.pdb
 C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\IHM_Catalogue\obj\Debug\IHM_Catalogue.GenerateBarcode.resources
+C:\Users\Cdi07\Desktop\GitHub\Bricachoc\BricaChoc2\IHM_Catalogue\obj\Debug\IHM_Catalogue.frmAccueil.resources

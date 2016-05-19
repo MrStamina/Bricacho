@@ -9,10 +9,12 @@ namespace BLL
 {
     public class CatalogueManager
     {
+        CatalogueDAL catDal = new CatalogueDAL();
+        Catalogue cat = new Catalogue();
         public Catalogue ChargerCatalogue()
         {
-            CatalogueDAL catDal = new CatalogueDAL();
-            Catalogue cat = catDal.GetAllProduits();
+            
+            cat = catDal.GetAllProduits();
             return cat;
 
         }
@@ -24,10 +26,16 @@ namespace BLL
             return listCatProd;
         }
 
-        public void RechercherProduit(int idProduit)
+        public Produit RechercherProduitbyCpu(int cpu)
         {
-
+            Produit prod = cat.LesProduits.First(a => a.Cpu == cpu);
+            return prod;
         }
 
+        public Produit RechercherProduitByName(string nom)
+        {
+            Produit prod = cat.LesProduits.First(a => a.Nom_Produit == nom);
+            return prod;
+        }
     }
 }

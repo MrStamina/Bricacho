@@ -10,20 +10,32 @@ namespace BLL
 {
     public class ProduitManager
     {
-        public int AddProduit(Produit prod) 
+        public bool AddProduit(Produit prod) 
         {
             ProduitDAL prodDal = new ProduitDAL();
-            return prodDal.AddProduit(prod);
+            if (prodDal.AddProduit(prod))
+                return true;
+            else
+                return false;
         }
 
-        public void updateProduit(Produit prod)
+        public bool updateProduit(Produit prod)
         {
+            ProduitDAL prodDal = new ProduitDAL();
+            if (prodDal.UpdProduit(prod))
+                return true;
+            else
+                return false;
 
         }
 
-        public void delProduit(Produit prod)
+        public bool delProduit(Produit prod)
         {
-
+            ProduitDAL prodDal = new ProduitDAL();
+            if (prodDal.DelProduit(prod))
+                return true;
+            else
+                return false;
         }
 
     }

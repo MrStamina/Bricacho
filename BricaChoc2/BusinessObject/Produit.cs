@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 public  class Produit
     {
-        public int IdProduit { get; set; }
+       
         public int Cpu { get; set; }
         public string Nom_Produit { get; set; }
 
@@ -24,9 +24,9 @@ public  class Produit
 
         }
 
-        public Produit(int id,int cpu, string nom, Categorie_Produit cat, string des,double pu)
+        public Produit(int cpu, string nom, Categorie_Produit cat, string des,double pu)
         {
-            this.IdProduit = id;
+            
             this.Cpu = cpu;
             this.Nom_Produit = nom;
             this.Categorie = cat;

@@ -8,6 +8,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using System.Drawing.Imaging;
+using System.Runtime.InteropServices;
+using System.Drawing.Text;
 using DAL.Exceptions;
 
 namespace IHM_Catalogue
@@ -24,35 +28,26 @@ namespace IHM_Catalogue
         {
             cata = cat;
             InitializeComponent();
+            initialisation();
             
-            try
-            {
-                categorieProduitBindingSource.DataSource = cata.ChargerLesCategorie();
-            }
-            catch(DaoExceptionAfficheMessage deaf)
-            {
-                MessageBox.Show(deaf.Message);
-            
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            comboBoxCatProd.SelectedItem = null;
+           
         }
 
         private void buttonValider_Click(object sender, EventArgs e)
         {
             if(comboBoxCatProd.SelectedItem !=null)
             {
-                int codeProduit = 0;
+                
                 prodMan = new ProduitManager();
-                Produit prod = new Produit(codeProduit, Convert.ToInt32(textBoxCpu.Text), textBoxNomProd.Text, (Categorie_Produit)comboBoxCatProd.SelectedItem,
+                Produit prod = new Produit(Convert.ToInt32(textBoxCpu.Text), textBoxNomProd.Text, (Categorie_Produit)comboBoxCatProd.SelectedItem,
                     textBoxDescription_Prod.Text, Convert.ToDouble(textBoxPrix_Unitaire.Text));
                 try
                 {
-                  codeProduit = prodMan.AddProduit(prod);
-                  prod.IdProduit = codeProduit;
+                   if(prodMan.AddProduit(prod) == true)
+                    {
+                        MessageBox.Show("Le produit a été ajouté");
+                    }
+                 
                 }
                 catch (DaoExceptionAfficheMessage def)
                 {
@@ -68,13 +63,43 @@ namespace IHM_Catalogue
 
         private void buttonCreer_Click(object sender, EventArgs e)
         {
-            GenerateBarcode genbar = new GenerateBarcode();
-            genbar.Show();
+            string barcode = textBoxCpu.Text;
+            Bitmap bitmap = new Bitmap(barcode.Length * 40, 150);
+            using (Graphics graphics = Graphics.FromImage(bitmap))
+            {
+                Font oFont = new System.Drawing.Font("Code EAN13", 40);
+                PointF point = new PointF(2f, 2f);
+                SolidBrush black = new SolidBrush(Color.Black);
+                SolidBrush white = new SolidBrush(Color.White);
+                graphics.FillRectangle(white, 0, 0, bitmap.Width, bitmap.Height);
+                graphics.DrawString("*" + barcode + "*", oFont, black, point);
+
+            }
+            using (MemoryStream ms = new MemoryStream())
+            {
+                bitmap.Save(ms, ImageFormat.Png);
+                pictureBoxCodeBarre.Image = bitmap;
+                pictureBoxCodeBarre.Height = bitmap.Height;
+                pictureBoxCodeBarre.Width = bitmap.Width;
+            }
         }
 
         private void initialisation()
         {
+            try
+            {
+                categorieProduitBindingSource.DataSource = cata.ChargerLesCategorie();
+            }
+            catch (DaoExceptionAfficheMessage deaf)
+            {
+                MessageBox.Show(deaf.Message);
 
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            comboBoxCatProd.SelectedItem = null;
         }
     }
 }

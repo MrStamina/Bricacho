@@ -10,7 +10,7 @@ namespace DAL
 {
     public class ProduitDAL
     {
-        public int AddProduit(Produit prod)
+        public bool AddProduit(Produit prod)
         {
 
             using (DbConnection oConnection = Connection.GetConnectionMySQL())
@@ -21,10 +21,7 @@ namespace DAL
                     oCommand.CommandType = CommandType.StoredProcedure;
                     oCommand.Parameters.Clear();
                     AffectParam(prod, oCommand);
-                    DbParameter dbp = oCommand.CreateParameter();
-                    dbp.DbType = DbType.Int32;
-                    dbp.Direction = ParameterDirection.Output;
-                    oCommand.Parameters.Add(dbp);
+                    
                     
                     try
                     {
@@ -33,7 +30,7 @@ namespace DAL
                             throw new DaoExceptionAfficheMessage
                                 ("L'opération d'insertion n'a pas été réalisée");
                         else
-                            return (int)dbp.Value;
+                            return true;
                     
                     }
                     catch(DbException de)
@@ -48,7 +45,68 @@ namespace DAL
             }
         }
 
-        public void AffectParam(Produit prod, DbCommand oCommand)
+        public bool DelProduit(Produit prod)
+        {
+            using (DbConnection oConnection = Connection.GetConnectionMySQL())
+            {
+                using (DbCommand oCommand = oConnection.CreateCommand())
+                {
+                    oCommand.CommandText = "del_produit";
+                    oCommand.CommandType = CommandType.StoredProcedure;
+                    oCommand.Parameters.Clear();
+                    DbParameter odp = oCommand.CreateParameter();
+                    odp.DbType = DbType.Int32;
+                    odp.Direction = ParameterDirection.Input;
+                    odp.ParameterName = "cpu_prod";
+                    odp.Value = prod.Cpu;
+                    oCommand.Parameters.Add(odp);
+                    try
+                    {
+                        int n = oCommand.ExecuteNonQuery();
+                        if (n != 1)
+                            throw new DaoExceptionAfficheMessage("La suppression a échoué");
+                        return true;
+                    }
+                    catch (DbException ex)
+                    {
+                        throw new DaoExceptionAfficheMessage("La suppression a échoué : \n" + ex.Message, ex);
+                    }
+                }
+            }
+        }
+
+        public bool UpdProduit(Produit prod)
+        {
+            using (DbConnection oConnection = Connection.GetConnectionMySQL())
+            {
+                using (DbCommand oCommand = oConnection.CreateCommand())
+                {
+                    oCommand.CommandText = "upd_produit";
+                    oCommand.CommandType = CommandType.StoredProcedure;
+                    oCommand.Parameters.Clear();
+                    AffectParam(prod, oCommand);
+
+                    try
+                    {
+                        int n = oCommand.ExecuteNonQuery();
+                        if (n != 1)
+                            throw new DaoExceptionAfficheMessage
+                                ("L'opération de modification n'a pas été réalisée");
+                        else
+                            return true;
+
+                    }
+                    catch (DbException de)
+                    {
+                        throw new DaoExceptionAfficheMessage
+                            ("Une erreur s'est produite sur la base : \n"
+                                    + de.Message, de);
+                    }
+                }
+            }
+        }
+
+        private void AffectParam(Produit prod, DbCommand oCommand)
         {
             // Cpu Produit
             DbParameter odbp1 = oCommand.CreateParameter();
@@ -69,7 +127,10 @@ namespace DAL
             odbp3.DbType = DbType.String;
             odbp3.Direction = ParameterDirection.Input;
             odbp3.ParameterName = "desc_produit";
-            odbp3.Value = prod.Description;
+            if (prod.Description == string.Empty)
+                odbp3.Value = null;
+            else
+                odbp3.Value = prod.Description;
             oCommand.Parameters.Add(odbp3);
             //PrixUnitaire
             DbParameter odbp5 = oCommand.CreateParameter();

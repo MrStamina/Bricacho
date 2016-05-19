@@ -53,5 +53,24 @@ namespace IHM_Catalogue
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void radioButtonCpu_CheckedChanged(object sender, EventArgs e)
+        {
+            buttonRechercher.Visible = true;
+            textBoxRecherche.Visible = true;
+            
+            
+        }
+
+        private void buttonRechercher_Click(object sender, EventArgs e)
+        {
+            Produit prod = new Produit();
+            prod = catman.RechercherProduitbyCpu(Convert.ToInt32(textBoxRecherche.Text));
+            dataGridView1.Visible = true;
+            lesProduitsBindingSource.DataSource = prod;
+            
+        }
     }
+
+
 }
