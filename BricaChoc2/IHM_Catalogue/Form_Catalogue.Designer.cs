@@ -225,6 +225,7 @@
             this.radioButtonNom.TabStop = true;
             this.radioButtonNom.Text = "Par Nom";
             this.radioButtonNom.UseVisualStyleBackColor = true;
+            this.radioButtonNom.CheckedChanged += new System.EventHandler(this.radioButtonNom_CheckedChanged);
             // 
             // radioButtonCat
             // 
@@ -236,6 +237,7 @@
             this.radioButtonCat.TabStop = true;
             this.radioButtonCat.Text = "Par Categorie";
             this.radioButtonCat.UseVisualStyleBackColor = true;
+            this.radioButtonCat.CheckedChanged += new System.EventHandler(this.radioButtonCat_CheckedChanged);
             // 
             // radioButtonPrix
             // 
@@ -247,6 +249,7 @@
             this.radioButtonPrix.TabStop = true;
             this.radioButtonPrix.Text = "Par Prix";
             this.radioButtonPrix.UseVisualStyleBackColor = true;
+            this.radioButtonPrix.CheckedChanged += new System.EventHandler(this.radioButtonPrix_CheckedChanged);
             // 
             // comboBoxCategorie
             // 

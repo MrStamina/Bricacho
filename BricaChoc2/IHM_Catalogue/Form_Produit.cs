@@ -64,10 +64,10 @@ namespace IHM_Catalogue
         private void buttonCreer_Click(object sender, EventArgs e)
         {
             string barcode = textBoxCpu.Text;
-            Bitmap bitmap = new Bitmap(barcode.Length * 40, 150);
+            Bitmap bitmap = new Bitmap(barcode.Length * 30, 150);
             using (Graphics graphics = Graphics.FromImage(bitmap))
             {
-                Font oFont = new System.Drawing.Font("Code EAN13", 40);
+                Font oFont = new System.Drawing.Font("Code EAN13", 60);
                 PointF point = new PointF(2f, 2f);
                 SolidBrush black = new SolidBrush(Color.Black);
                 SolidBrush white = new SolidBrush(Color.White);

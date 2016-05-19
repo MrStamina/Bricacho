@@ -41,10 +41,10 @@ public  class Produit
             return Nom_Produit + " : " + Description + " prix unitaire : " + Prix_Unitaire + " euros";
         }
 
-        public override bool Equals(object obj)
+        public override bool Equals(Object obj)
         {
-            return base.Equals(obj);
-        }
+        return obj is Produit && Cpu == ((Produit)obj).Cpu;
+    }
 
         public override int GetHashCode()
         {

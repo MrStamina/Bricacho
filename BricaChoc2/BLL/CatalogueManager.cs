@@ -11,6 +11,7 @@ namespace BLL
     {
         CatalogueDAL catDal = new CatalogueDAL();
         Catalogue cat = new Catalogue();
+        
         public Catalogue ChargerCatalogue()
         {
             
@@ -36,6 +37,18 @@ namespace BLL
         {
             Produit prod = cat.LesProduits.First(a => a.Nom_Produit == nom);
             return prod;
+        }
+
+        public List<Produit> RechercherProduitByPrix(double pu)
+        {
+            List<Produit> listprod = cat.LesProduits.FindAll(delegate (Produit p) { return p.Prix_Unitaire == pu; });
+            return listprod;
+        }
+
+        public List<Produit> RechercherProduitByCategorie(Categorie_Produit catprod)
+        {
+            List<Produit> listprod = cat.LesProduits.FindAll(delegate (Produit p) { return p.Categorie.Id_Categorie == catprod.Id_Categorie; });
+            return listprod;
         }
     }
 }

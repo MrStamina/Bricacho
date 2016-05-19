@@ -15,7 +15,8 @@ namespace IHM_Catalogue
 {
     public partial class Form_Catalogue : Form
     {
-        CatalogueManager catman;
+        CatalogueManager catman;       
+        Catalogue cat;
        
         public Form_Catalogue()
         {
@@ -25,7 +26,9 @@ namespace IHM_Catalogue
 
         private void buttonDisplayCat_Click(object sender, EventArgs e)
         {
-
+            lesProduitsBindingSource.DataSource = null;            
+            lesProduitsBindingSource.DataSource = cat.LesProduits;
+            dataGridView1.Refresh();            
             dataGridView1.Visible = true;
         }
 
@@ -38,10 +41,14 @@ namespace IHM_Catalogue
         private void initialisation()
         {
             InitializeComponent();
-            catman = new CatalogueManager();
+            catman = new CatalogueManager();           
+            cat = new Catalogue();
+            
+            
             try
             {
-                lesProduitsBindingSource.DataSource = catman.ChargerCatalogue().LesProduits;
+                cat = catman.ChargerCatalogue();                
+                lesProduitsBindingSource.DataSource = cat.LesProduits;
                 categorieProduitBindingSource.DataSource = catman.ChargerLesCategorie();
             }
             catch (DaoExceptionAfficheMessage deaf)
@@ -54,21 +61,65 @@ namespace IHM_Catalogue
             }
         }
 
-        private void radioButtonCpu_CheckedChanged(object sender, EventArgs e)
-        {
-            buttonRechercher.Visible = true;
-            textBoxRecherche.Visible = true;
-            
-            
-        }
+        
 
         private void buttonRechercher_Click(object sender, EventArgs e)
         {
             Produit prod = new Produit();
-            prod = catman.RechercherProduitbyCpu(Convert.ToInt32(textBoxRecherche.Text));
-            dataGridView1.Visible = true;
-            lesProduitsBindingSource.DataSource = prod;
+            List<Produit> listprod = new List<Produit>();
+            if (radioButtonCpu.Checked)
+            {
+                prod = catman.RechercherProduitbyCpu(Convert.ToInt32(textBoxRecherche.Text));
+                lesProduitsBindingSource.DataSource = prod;
+            }
+            else if (radioButtonNom.Checked)
+            {
+                prod = catman.RechercherProduitByName(textBoxRecherche.Text);
+                lesProduitsBindingSource.DataSource = prod;
+            }
+                
+            else if (radioButtonPrix.Checked)
+            {
+                listprod = catman.RechercherProduitByPrix(Convert.ToDouble(textBoxRecherche.Text));
+                lesProduitsBindingSource.DataSource = listprod;
+            }                
+            else if(radioButtonCat.Checked)
+            {
+                listprod = catman.RechercherProduitByCategorie((Categorie_Produit)comboBoxCategorie.SelectedItem);
+                lesProduitsBindingSource.DataSource = listprod;
+            }
+
+                dataGridView1.Visible = true;
             
+            
+        }
+
+        private void radioButtonCpu_CheckedChanged(object sender, EventArgs e)
+        {
+            buttonRechercher.Visible = true;
+            textBoxRecherche.Visible = true;
+
+
+        }
+
+        private void radioButtonNom_CheckedChanged(object sender, EventArgs e)
+        {
+            buttonRechercher.Visible = true;
+            textBoxRecherche.Visible = true;
+        }
+
+        private void radioButtonPrix_CheckedChanged(object sender, EventArgs e)
+        {
+            buttonRechercher.Visible = true;
+            textBoxRecherche.Visible = true;
+        }
+
+        private void radioButtonCat_CheckedChanged(object sender, EventArgs e)
+        {
+            buttonRechercher.Visible = true;
+            comboBoxCategorie.Visible = true;
+            textBoxRecherche.Visible = false;
+            comboBoxCategorie.SelectedItem = null;
         }
     }
 
