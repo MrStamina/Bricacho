@@ -13,6 +13,7 @@ namespace DAL
     {
         public  Catalogue  GetAllProduits()
         {
+            //plop
             Catalogue cat = new Catalogue();
             using (DbConnection oConnection = Connection.GetConnectionMySQL())
             {
